@@ -1,9 +1,8 @@
 //====================================================================================================
 
-.section-1 {
+.main-screen-home {
     background: url("../img/home/main-screen_bg.jpg") no-repeat top center;
     background-size: cover;
-    padding: rem(100) 0 rem(40) 0;
     &__container {
     }
     &__main-screen-image {
@@ -221,7 +220,6 @@
 .swiper-slide {
 }
 
-
 .page {
     &__section-5 {
     }
@@ -357,8 +355,6 @@
 
 // ==============
 
-
-
 // ====
 
 .page {
@@ -366,7 +362,6 @@
         padding: rem(48) 0;
     }
 }
-
 
 // =====
 
