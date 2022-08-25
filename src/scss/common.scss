@@ -390,3 +390,33 @@
         color: #ffffff;
     }
 }
+
+//
+
+.concerts-section-1 {
+    &__container {
+        padding: 0;
+        margin: 0;
+        max-width: none;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__image {
+        display: block;
+        object-fit: cover;
+        // height: auto;
+        width: 100%;
+        max-height: rem(500);
+    }
+}
