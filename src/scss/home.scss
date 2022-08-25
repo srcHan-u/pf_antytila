@@ -25,7 +25,7 @@
     }
 }
 
-.section-2 {
+.concerts {
     &__container {
         display: flex;
         flex-direction: column;
@@ -44,7 +44,7 @@
     &__table {
     }
 }
-.table-section-2 {
+.table-concerts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,10 +59,25 @@
         // justify-content: space-between;
         // align-items: center;
     }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 1 rem(300);
+        gap: rem(10);
+        @media (max-width: $mobileSmall) {
+            //   flex-direction: column;
+            flex: none;
+            width: 100%;
+        }
+    }
     &__row {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        gap: rem(15);
+        @media (max-width: $mobileSmall) {
+            flex-direction: column;
+        }
     }
     &__date {
         font-family: "albertusnovalight";
@@ -78,7 +93,6 @@
         flex-direction: column;
         align-items: flex-start;
         font-family: "albertusnovalight";
-
         span {
             font-family: "albertusnovathin";
             font-size: rem(16);
@@ -87,33 +101,13 @@
         }
     }
     &__status {
-    }
-
-    &__button {
-        font-family: "albertusnova";
-        font-weight: 400;
-        font-size: rem(16);
-        line-height: math.div(22, 16);
-        color: $mainColorBlack;
-        position: relative;
-        @media (any-hover: hover) {
-            &:hover {
-                &::before {
-                    width: 0%;
-                }
-            }
-        }
-        &::before {
-            transition: width 0.4s ease 0s;
-            position: absolute;
-            bottom: -2.5px;
-            left: 0;
-            content: "";
-            display: block;
+        align-self: center;
+        width: rem(138);
+        @media (max-width: $mobileSmall) {
             width: 100%;
-            height: rem(1.5);
-            background-color: $mainColorBlack;
         }
+    }
+    &__button {
     }
 }
 .label {
@@ -124,7 +118,6 @@
     align-items: center;
     // padding: em(10, 16) em(40.5, 16);
     height: rem(40);
-    width: rem(138);
     span {
         // padding: percent(9.5, 97) percent(20.5, 97);
         // display: block;

@@ -14,6 +14,30 @@
 }
 
 .button-get-all {
+    font-family: "albertusnova";
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: math.div(22, 16);
+    color: $mainColorBlack;
+    position: relative;
+    @media (any-hover: hover) {
+        &:hover {
+            &::before {
+                width: 0%;
+            }
+        }
+    }
+    &::before {
+        transition: width 0.4s ease 0s;
+        position: absolute;
+        bottom: -2.5px;
+        left: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: rem(1.5);
+        background-color: $mainColorBlack;
+    }
 }
 
 // news
