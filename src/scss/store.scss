@@ -1,0 +1,96 @@
+.header-store {
+    border-bottom: 1px solid $mainColorGray;
+    &__container {
+        min-height: rem(60);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navigation {
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        column-gap: rem(25);
+    }
+
+    &__btn-search {
+    }
+
+    &__btn-cart {
+    }
+}
+.navigation-header-store {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+    &__link {
+        font-family: "albertusnovalight";
+        font-weight: 300;
+        font-size: rem(14);
+        line-height: math.div(19, 14);
+        color: $mainColorBlack;
+    }
+}
+
+// ====
+
+.page {
+    &_store {
+    }
+
+    &__store-section-1 {
+        @include adaptiveValue("padding-bottom", 100, 50);
+    }
+}
+.store-section-1 {
+    &__container {
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        max-width: rem(376);
+        min-width: rem(290);
+        margin: 0 auto;
+    }
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        gap: rem(24);
+    }
+    &__item {
+        flex: 0 1 25%;
+    }
+}
+.store-section-1-tabs {
+    &__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(24);
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-family: "albertusnovalight";
+        font-weight: 300;
+        font-size: rem(18);
+        line-height: math.div(25, 18);
+        color: $mainColorBlack;
+        &._tab-active {
+            color: $mainColorRed;
+        }
+    }
+
+    &__content {
+    }
+
+    &__body {
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ua">
+  @@include('html/_head.htm',{ "title":"Магазин" })
+  <body>
+    <header class="header-store">
+        <div class="header-store__container">
+            <nav class="header-store__navigation navigation-header-store">
+                <a href="#" class="navigation-header-store__link">Оплата і доставка</a>
+                <a href="#" class="navigation-header-store__link">Контакти</a>
+            </nav>
+            <div class="header-store__buttons">
+                <button type="button" class="header-store__btn-search"></button>
+                <button type="button" class="header-store__btn-cart "></button>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+      <main class="page page_store">
+        <div class="page__store-section-1 store-section-1">
+            <div class="store-section-1__container">
+                <img class="store-section-1__image" data-src="@img/general/logo_lg.png" alt="image">
+                <div data-tabs class="store-section-1-tabs">
+                    <nav data-tabs-titles class="store-section-1-tabs__navigation">
+                        <button type="button" class="store-section-1-tabs__title _tab-active">NEW</button>
+                        <button type="button" class="store-section-1-tabs__title">SALE</button>
+                        <button type="button" class="store-section-1-tabs__title">ВСЕ</button>
+                        <button type="button" class="store-section-1-tabs__title">ЦУКЕРКИ</button>
+                        <button type="button" class="store-section-1-tabs__title">ФУТБОЛКИ</button>
+                        <button type="button" class="store-section-1-tabs__title">ПЛАКАТИ</button>
+                        <button type="button" class="store-section-1-tabs__title">АКСЕСУАРИ</button>
+                    </nav>
+                    <div data-tabs-body class="store-section-1-tabs__content">
+                        <div class="store-section-1-tabs__body">
+                            <ul class="store-section-1__list">
+                                <li class="store-section-1__item">
+                                    <article class="section-4-card">
+                                        <div class="section-4-card__body">
+                                          <div class="section-4-card__image-ib">
+                                            <img
+                                              data-src="@img/general/store/card-image_1.png"
+                                              alt="card-image"
+                                            />
+                                          </div>
+                                          <div class="section-4-card__badge section-4-card__badge_status_new">NEW</div>
+                                          
+                                          
+                                        </div>
+                                        <div class="section-4-card__footer">
+                                          <h2 class="section-4-card__heading">
+                                            Магніт «АНТИТІЛА» 10Х6СМ
+                                          </h2>
+                                          <small class="section-4-card__price">30 ₴</small>
+                                        </div>
+                                      </article>
+                                </li>
+                                <li class="store-section-1__item">
+                                    <article class="section-4-card">
+                                        <div class="section-4-card__body">
+                                          <div class="section-4-card__image-ib">
+                                            <img
+                                              data-src="@img/general/store/card-image_2.png"
+                                              alt="card-image"
+                                            />
+                                          </div>
+                                          <div class="section-4-card__badge section-4-card__badge_status_sale">SALE</div>
+                                        </div>
+                                        <div class="section-4-card__footer">
+                                          <h2 class="section-4-card__heading">
+                                            Магніт «АНТИТІЛА» 10Х6СМ
+                                          </h2>
+                                          <small class="section-4-card__price">30 ₴</small>
+                                        </div>
+                                      </article>
+                                </li>
+                                <li class="store-section-1__item">
+                                    <article class="section-4-card">
+                                        <div class="section-4-card__body">
+                                          <div class="section-4-card__image-ib">
+                                            <img
+                                              data-src="@img/general/store/card-image_3.png"
+                                              alt="card-image"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="section-4-card__footer">
+                                          <h2 class="section-4-card__heading">
+                                            Магніт «АНТИТІЛА» 10Х6СМ
+                                          </h2>
+                                          <small class="section-4-card__price">30 ₴</small>
+                                        </div>
+                                      </article>
+                                </li>
+                                <li class="store-section-1__item">
+                                    <article class="section-4-card">
+                                        <div class="section-4-card__body">
+                                          <div class="section-4-card__image-ib">
+                                            <img
+                                              data-src="@img/general/store/card-image_4.png"
+                                              alt="card-image"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="section-4-card__footer">
+                                          <h2 class="section-4-card__heading">
+                                            Магніт «АНТИТІЛА» 10Х6СМ
+                                          </h2>
+                                          <small class="section-4-card__price">30 ₴</small>
+                                        </div>
+                                      </article>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="store-section-1-tabs__body">
+                            Содержимое второго таба
+                        </div>
+                        <div class="store-section-1-tabs__body">
+                            Содержимое третьего таба
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{} )
+  </body>
+</html>

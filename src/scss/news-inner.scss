@@ -1,0 +1,80 @@
+.page {
+    &__news-inner-post {
+        padding: rem(48) rem(15);
+    }
+}
+.news-inner-post {
+    width: 100%;
+    max-width: rem(606);
+    margin: 0 auto;
+    &__title {
+        @include h1;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: em(15, 30);
+        }
+    }
+
+    &__date {
+        text-align: center;
+        display: block;
+        color: $mainColorGray;
+        &:not(:last-child) {
+            margin-bottom: rem(10);
+        }
+    }
+
+    &__body {
+    }
+
+    &__text {
+        // margin-bottom: rem(24);
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(23, 16);
+        color: $mainColorBlack;
+
+        &_divider {
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                top: calc(100% + 16px);
+                left: 0;
+                background-color: #e0e0e0;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(16);
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+            padding-top: rem(16);
+        }
+    }
+
+    &__item {
+    }
+    &__link {
+        font-size: rem(24);
+    }
+    &__image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+}

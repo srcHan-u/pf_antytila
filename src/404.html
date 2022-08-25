@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ua">
+  @@include('html/_head.htm',{ "title":"Все фото" })
+  <body>
+    <div class="wrapper">
+      <main class="page page_404">
+        <div class="page__404 page-404">
+            <div class="page-404__container">
+                <img class="page-404__logo" data-src="@img/general/logo.png" alt="image">
+                <img class="page-404__image" data-src="@img/404/image.png" alt="image">
+                <p class="page-404__alert-text">Схоже, ми не можемо знайти сторінку, яку вишукаєте.</p>
+                <a href="./index.html" class="page-404__button">Повернутися на головну</a>
+            </div>
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{} )
+  </body>
+</html>

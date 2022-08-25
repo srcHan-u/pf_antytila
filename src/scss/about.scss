@@ -1,0 +1,123 @@
+.page {
+    &_about {
+    }
+    &__about {
+        @include adaptiveValue("padding-bottom", 100, 48);
+        padding-top: rem(48);
+    }
+}
+.about {
+    &__container {
+    }
+    &__title {
+        @include h1;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: em(32, 32);
+        }
+    }
+
+    &__team {
+    }
+
+    &__description {
+    }
+}
+.team-about {
+    &__field {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(24);
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+        &_reverse {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__image {
+        flex: 0 1 percent(576, 1176);
+        // min-width: rem(290);
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: $mainColorBlack;
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(23, 16);
+    }
+
+    &__name {
+        font-family: "albertusnova";
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: math.div(28, 20);
+    }
+
+    &__post {
+        &:not(:last-child) {
+            margin-bottom: em(8, 16);
+        }
+    }
+
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: em(12, 16);
+        }
+    }
+
+    &__social-list {
+        display: flex;
+        align-items: center;
+        font-size: rem(24);
+        gap: em(18, 24);
+    }
+
+    &__social-link {
+    }
+}
+
+.description-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: rem(32);
+    &__title {
+        @include h1;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: em(32, 32);
+        }
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(16);
+        color: $mainColorBlack;
+        font-weight: 400;
+        max-width: rem(576);
+    }
+
+    &__heading {
+        font-family: "albertusnova";
+        font-size: rem(20);
+        line-height: math.div(28, 20);
+    }
+
+    &__text {
+        font-family: "OpenSans";
+        font-size: rem(16);
+        line-height: math.div(23, 16);
+        &:not(:last-child) {
+            margin-bottom: em(16, 16);
+        }
+    }
+}

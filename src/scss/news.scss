@@ -1,0 +1,6 @@
+.page {
+    &__news-section-2 {
+        @include adaptiveValue("padding-bottom", 100, 50);
+        padding-top: rem(50);
+    }
+}

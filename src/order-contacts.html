@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ua">
+  @@include('html/_head.htm',{ "title":"Продукт" })
+  <body>
+    <div class="wrapper">
+      <header class="header-store">
+        <div class="header-store__container">
+          <img
+            src="@img/general/logo_sm.png"
+            alt="logo"
+            class="header-store__logo"
+          />
+        </div>
+      </header>
+      <main class="page page_order-contacts">
+        <div class="page__order-contacts order-contacts">
+          <div class="order-contacts__container">
+              <div class="order-contacts__stages order-contacts-stages">
+                <div data-spollers class="order-contacts-spollers order-contacts-stages__step-1 order-contacts-stages-step-1">
+                  <div class="order-contacts-spollers__item">
+                    <button
+                      type="button"
+                      data-spoller
+                      class="order-contacts-spollers__title _spoller-active"
+                    >
+                      Контактні дані
+                    </button>
+                    <div class="order-contacts-spollers__body">
+                      <div class="order-contacts-stages-step-1__info">
+                        <div class="order-contacts-stages-step-1__row">
+                          <label class="order-contacts-stages-step-1__input-label">
+                            Прізвище та ім’я
+                            <br>
+                            <input
+                              autocomplete="off"
+                              type="text"
+                              name="form[]"
+                              data-error="Ошибка"
+                              placeholder="Іванов Іван"
+                              class="order-contacts-stages-step-1__input"
+                              required
+                            />
+                          </label>
+                          <label class="order-contacts-stages-step-1__input-label">
+                            Email
+                            <br>
+                            <input
+                              autocomplete="off"
+                              type="email"
+                              name="form[]"
+                              data-error="Ошибка"
+                              placeholder="example@gmail.com"
+                              class="order-contacts-stages-step-1__input"
+                              required
+                            />
+                          </label>
+                        </div>
+                        <div class="order-contacts-stages-step-1__row">
+                          <label class="order-contacts-stages-step-1__input-label">
+                            Номер телефону
+                            <br>
+                            <input
+                              autocomplete="off"
+                              type="text"
+                              name="form[]"
+                              data-error="Ошибка"
+                              placeholder="+38 (___) ___ __ __"
+                              class="order-contacts-stages-step-1__input"
+                              required
+                            />
+                          </label>
+                          <button
+                            type="button"
+                            class="order-contacts-stages-step-1__button form-button-next"
+                            disabled
+                          >
+                            Продовжити оформлення
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-spollers class="order-contacts-spollers order-contacts-stages__step-2 order-contacts-stages-step-2">
+                  <div class="order-contacts-spollers__item">
+                    <button
+                      type="button"
+                      data-spoller
+                      class="order-contacts-spollers__title _spoller-active"
+                    >
+                      Доставка
+                    </button>
+                    <div class="order-contacts-spollers__body">
+                      <div class="order-contacts-stages-step-2__delivery">
+                            <div class="options options_step-2-delivery">
+                                <div class="options__item options__item_width_full">
+                                    <input hidden id="o_1" class="options__input" type="radio" value="1" name="option">
+                                    <label for="o_1" class="options__label"><span class="options__text">Нова пошта</span></label>
+                                    <div class="order-contacts-stages-step-2__box">
+                                        <select name="form[]" class="select">
+                                            <option value="1" selected>Пункт №1</option>
+                                            <option value="2">Пункт №2</option>
+                                            <option value="3">Пункт №3</option>
+                                            <option value="4">Пункт №4</option>
+                                        </select>
+                                        <select name="form[]" class="select">
+                                            <option value="1" selected>Пункт №1</option>
+                                            <option value="2">Пункт №2</option>
+                                            <option value="3">Пункт №3</option>
+                                            <option value="4">Пункт №4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+                                    <label for="o_2" class="options__label"><span class="options__text">Укрпошта</span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="o_3" class="options__input" type="radio" value="3" name="option">
+                                    <label for="o_3" class="options__label"><span class="options__text">Justin</span></label>
+                                </div>
+                            </div>
+                        <button
+                            type="button"
+                            class="form-button-next form-button-next_center"
+                            disabled
+                          >
+                            Продовжити оформлення
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div data-spollers class="order-contacts-spollers order-contacts-stages__step-3 order-contacts-stages-step-3">
+                  <div class="order-contacts-spollers__item">
+                    <button
+                      type="button"
+                      data-spoller
+                      class="order-contacts-spollers__title _spoller-active"
+                    >
+                    Оплата
+                    </button>
+                    <div class="order-contacts-spollers__body">
+                      <div class="order-contacts-stages-step-3__payment">
+                            <div class="options options_step-3-payment">
+                                <div class="options__item">
+                                    <input hidden id="b_1" class="options__input" type="radio" value="1" name="option">
+                                    <label for="b_1" class="options__label"><span class="options__text">100% передплата на картку (реквізити для оплати будуть надіслані Вам на вказану пошту або номер телефону)</span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="b_2" class="options__input" type="radio" value="2" name="option">
+                                    <label for="b_2" class="options__label"><span class="options__text">Оплата картою на сайті</span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="b_3" class="options__input" type="radio" value="3" name="option">
+                                    <label for="b_3" class="options__label"><span class="options__text">PrivatPay</span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="b_4" class="options__input" type="radio" value="4" name="option">
+                                    <label for="b_4" class="options__label"><span class="options__text">Google Pay</span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input hidden id="b_5" class="options__input" type="radio" value="5" name="option">
+                                    <label for="b_5" class="options__label"><span class="options__text">Apple Pay</span></label>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form
+                action="#"
+                method="post"
+                class="basket__form order-form"
+                name="order-form"
+              >
+                <div class="order-form__header header-order-form">
+                  <h4 class="header-order-form__heading">Ваше замовлення</h4>
+                </div>
+                <div class="order-form__body body-order-form">
+                  <div
+                    class="body-order-form__field body-order-form__field_status_sum"
+                  >
+                    Сума замовлення<span class="body-order-form__filed-value"
+                      >400 ₴</span
+                    >
+                  </div>
+                  <div
+                    class="body-order-form__field body-order-form__field_status_discount"
+                  >
+                    Знижка<span class="body-order-form__filed-value"
+                      >-50 ₴</span
+                    >
+                  </div>
+                  <div
+                    class="body-order-form__field body-order-form__field_status_promocode"
+                  >
+                    <input
+                      autocomplete="off"
+                      type="text"
+                      data-error="Ошибка"
+                      placeholder="Маєте промокод?"
+                      class="body-order-form__input-promocode"
+                    />
+                    <button
+                      type="button"
+                      class="body-order-form__button-promocode"
+                    >
+                      OK
+                    </button>
+                  </div>
+                  <div
+                    class="body-order-form__field body-order-form__field_status_total"
+                  >
+                    Всього до сплати<span class="body-order-form__filed-value"
+                      >350 ₴</span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="order-form__button-submit"
+                  disabled
+                >
+                  Оформити замовлення
+                </button>
+              </form>
+          </div>
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{} )
+  </body>
+</html>

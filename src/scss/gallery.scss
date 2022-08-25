@@ -1,0 +1,6 @@
+.page {
+    &__gallery-section-2 {
+        @include adaptiveValue("padding-bottom", 100, 48);
+        padding-top: rem(48);
+    }
+}

@@ -1,0 +1,392 @@
+// Заголовки, общие БЄМ блоки и проче...
+.background-block {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 99;
+    .lock & {
+        display: block;
+    }
+}
+
+.button-get-all {
+}
+
+// news
+
+.section-8 {
+    &__container {
+    }
+
+    &__title {
+        @include h1;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: em(32, 30);
+        }
+        &_h2 {
+            text-align: left;
+            font-size: rem(20);
+            line-height: math.div(28, 20);
+            &:not(:last-child) {
+                margin-bottom: em(24, 20);
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(24);
+        flex-wrap: wrap;
+        &:not(:last-child) {
+            margin-bottom: rem(28);
+        }
+    }
+
+    &__item {
+        flex: 0 1 rem(276);
+    }
+
+    &__card {
+    }
+    &__pagination {
+        width: rem(314);
+        margin: 0 auto;
+    }
+}
+.card-section-8 {
+    &__image-ibg {
+        padding-bottom: percent(186, 276);
+        border-radius: 10px;
+        overflow: hidden;
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    &__body {
+    }
+
+    &__heading {
+        font-family: "albertusnova";
+        font-weight: 300;
+        font-size: rem(18);
+        line-height: math.div(25, 18);
+        color: $mainColorBlack;
+        &:not(:last-child) {
+            margin-bottom: rem(4);
+        }
+    }
+
+    &__text {
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(21, 14);
+        color: #2d2d2d;
+        margin-bottom: rem(8);
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: rem(8);
+    }
+
+    &__date {
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(12);
+        line-height: math.div(21, 12);
+        color: $mainColorBlack;
+    }
+
+    &__button {
+        font-family: "albertusnova";
+        font-weight: 300;
+        font-size: rem(12);
+        line-height: math.div(17, 12);
+        color: $mainColorBlack;
+        padding: em(7, 12) em(17.5, 12);
+        border: 1px solid $mainColorBlack;
+        border-radius: 5px;
+        transition: color 0.4s ease 0s, background-color 0.4s ease 0s, border-color 0.4s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $mainColorRed;
+                color: #fff;
+                border-color: $mainColorRed;
+            }
+        }
+    }
+}
+
+.pagination-section-8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(5);
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 0 1 percent(210, 314);
+        gap: rem(5);
+    }
+
+    &__number {
+        color: $mainColorBlack;
+        &.current {
+            color: $mainColorGray;
+        }
+    }
+    &__number-btn {
+        font-family: "NotoSans";
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: math.div(21, 14);
+        &_more {
+            color: $mainColorGray;
+        }
+    }
+
+    &__button {
+        &_prev {
+            color: $mainColorGray;
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
+        &_next {
+        }
+    }
+}
+
+// gallery
+
+.page {
+    &__section-7 {
+        padding-bottom: rem(48);
+    }
+}
+.section-7 {
+    &__container {
+    }
+
+    &__title {
+        @include h1;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: em(32, 32);
+        }
+        &_mb_less {
+            &:not(:last-child) {
+                margin-bottom: em(28, 32);
+            }
+        }
+    }
+
+    &__gallery {
+        &:not(:last-child) {
+            margin-bottom: rem(28);
+        }
+    }
+}
+.gallery-section-7 {
+    &__grid {
+        display: grid;
+        grid-template: auto / repeat(3, minmax(rem(290), rem(376)));
+        gap: rem(24);
+    }
+
+    &__item {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        @media (any-hover: hover) {
+            &:hover {
+                .gallery-section-7__image-date {
+                    color: rgba($color: #fff, $alpha: 1);
+                }
+            }
+        }
+        &.zoom-in {
+            &::before {
+                transition: background-color 0.4s ease 0s;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: #000000, $alpha: 0);
+                z-index: 2;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: rem(50);
+            }
+            @media (any-hover: hover) {
+                &:hover {
+                    &::before {
+                        content: "+";
+                        background-color: rgba($color: #000000, $alpha: 0.1);
+                    }
+                }
+            }
+        }
+        &_span_2 {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+        }
+    }
+    &__link {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        transition: background-color 0.4s ease 0s;
+        background-color: rgba(0, 0, 0, 0);
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+    &__image {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+    }
+    &__image-date {
+        transition: color 0.4s ease 0s;
+        position: absolute;
+        top: calc(100% - 38px);
+        left: 0;
+        width: 100%;
+        color: rgba($color: #fff, $alpha: 0);
+        text-align: center;
+    }
+}
+
+.image-counter-gallery-section-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-family: "OpenSans";
+    position: absolute;
+    top: percent(16, 450);
+    right: percent(16, 776);
+    &__number {
+        font-weight: 600;
+        font-size: rem(20);
+        line-height: math.div(27, 20);
+    }
+    &__text {
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(21, 14);
+    }
+}
+
+// ====
+
+.section-4-card {
+    border: 1px solid rgba($color: $mainColorGray, $alpha: 0.5);
+    border-radius: 10px;
+    padding: rem(12);
+    height: rem(400);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__body {
+        position: relative;
+    }
+
+    &__image-ib {
+        // todo fd change class-name
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: rem(8);
+        color: $mainColorBlack;
+        min-height: rem(68);
+    }
+
+    &__heading {
+        font-family: "albertusnovathin";
+        font-weight: 200;
+        font-size: rem(14);
+        line-height: math.div(19, 14);
+    }
+
+    &__price {
+        font-family: "albertusnova";
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(23, 16);
+    }
+
+    &__badge {
+        font-family: "CirceSlabC";
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: math.div(15, 14);
+        color: #ffffff;
+        padding: em(7, 14) em(11, 14);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: em(5, 14);
+        &_status_new {
+            background-color: #59ad02;
+        }
+        &_status_sale {
+            background-color: #ff1e00;
+        }
+    }
+}
+
+//
+
+.btn-cart {
+    position: relative;
+    &__counter {
+        visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: rem(14);
+        height: rem(14);
+        border-radius: 50%;
+        background-color: $mainColorRed;
+        border: 1px solid #e0e0e0;
+    }
+    &__number {
+        font-family: "NotoSans";
+        font-weight: 500;
+        font-size: rem(12);
+        line-height: math.div(16, 12);
+        color: #ffffff;
+    }
+}

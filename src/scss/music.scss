@@ -1,0 +1,60 @@
+.page {
+    &__music-section-2 {
+        @include adaptiveValue("padding-bottom", 100, 50);
+        padding-top: rem(48);
+    }
+}
+.music-section-2 {
+    &__container {
+    }
+
+    &__title {
+        @include h1;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: em(22, 30);
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 276px));
+        gap: rem(24);
+    }
+
+    &__item {
+    }
+
+    &__image-ibg {
+        padding-bottom: 100%;
+        display: block;
+    }
+}
+.tabs-music-section-2 {
+    &__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(24);
+        &:not(:last-child) {
+            margin-bottom: rem(32);
+        }
+    }
+
+    &__title {
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(23, 16);
+        color: $mainColorGray;
+        &._tab-active {
+            color: $mainColorBlack;
+        }
+    }
+
+    &__content {
+    }
+
+    &__body {
+    }
+}

@@ -1,0 +1,58 @@
+<html lang="ua">
+  @@include('html/_head.htm',{ "title":"Продукт" })
+  <body>
+    <div class="wrapper">
+        <header class="header-store">
+            <div class="header-store__container">
+              <nav class="header-store__navigation navigation-header-store">
+                <a href="#" class="navigation-header-store__link"
+                  >Оплата і доставка</a
+                >
+                <a href="#" class="navigation-header-store__link">Контакти</a>
+              </nav>
+              <img
+                src="@img/general/logo_sm.png"
+                alt="logo"
+                class="header-store__logo"
+              />
+              <div class="header-store__buttons">
+                <button type="button" class="header-store__btn-search btn-search">
+                  <img
+                    class="icon-search"
+                    data-src="@img/svg/ic_search.svg"
+                    alt="icon"
+                  />
+                </button>
+                <button type="button" class="header-store__btn-cart btn-cart">
+                  <img
+                    class="icon-cart"
+                    data-src="@img/svg/ic_basket.svg"
+                    alt="icon"
+                  />
+                  <div class="btn-cart__counter">
+                    <span class="btn-cart__number">0</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </header>
+      <main class="page page_search">
+        <section class="page__search search-page">
+            <div class="search-page__container">
+                <h1 class="search-page__title">Пошук</h1>
+                <div class="search-page__search-panel search-panel">
+                    <form class="search-panel__form" action="#" method="post">
+                        <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введіть для пошуку" class="search-panel__input">
+                        <button type="submit" class="search-panel__button"><img  data-src="@img/svg/ic_search.svg" alt="image"></button>
+                    </form>
+                    <div class="search-panel__status">Ми знайшли <span class="search-panel__status-count">20</span> товарів</div>
+                </div>
+                <div class="search-page__product"></div>
+            </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{} )
+  </body>
+</html>

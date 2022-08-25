@@ -1,0 +1,85 @@
+.page {
+    &__music-inner-section-2 {
+        @include adaptiveValue("padding-bottom", 100, 50);
+        padding-top: rem(50);
+    }
+}
+.music-inner-section-2 {
+    &__title {
+        @include h1;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: em(8, 30);
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        text-align: center;
+    }
+
+    &__body {
+    }
+
+    &__about {
+        &:not(:last-child) {
+            margin-bottom: rem(48);
+        }
+    }
+
+    &__list {
+    }
+}
+
+.about-music-inner {
+    &__heading {
+        @include h1;
+        text-align: center;
+        &:not(:last-child) {
+            margin-bottom: em(32, 30);
+        }
+    }
+    &__text-box {
+        display: flex;
+        align-items: flex-start;
+        gap: em(24, 16);
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(23, 16);
+        color: $mainColorBlack;
+    }
+    &__text {
+        flex: 0 1 50%;
+    }
+}
+
+.albums-music-inner {
+    &__heading {
+        font-family: "albertusnova";
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: math.div(28, 20);
+        color: $mainColorBlack;
+        &:not(:last-child) {
+            margin-bottom: em(24, 20);
+        }
+    }
+    &__list {
+    }
+}
+.list-music-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(24);
+    flex-wrap: wrap;
+    &__item {
+    }
+
+    &__album {
+    }
+
+    &__album-image {
+    }
+}

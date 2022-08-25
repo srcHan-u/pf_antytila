@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ua">
+  @@include('html/_head.htm',{ "title":"Продукт" })
+  <body>
+    <header class="header-store">
+      <div class="header-store__container">
+        <nav class="header-store__navigation navigation-header-store">
+          <a href="#" class="navigation-header-store__link"
+            >Оплата і доставка</a
+          >
+          <a href="#" class="navigation-header-store__link">Контакти</a>
+        </nav>
+        <img
+          src="@img/general/logo_sm.png"
+          alt="logo"
+          class="header-store__logo"
+        />
+        <div class="header-store__buttons">
+          <button type="button" class="header-store__btn-search"></button>
+          <button type="button" class="header-store__btn-cart"></button>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="page page_product">
+        <section class="page__product-section-1 product-section-1">
+          <div class="product-section-1__container">
+            <nav class="product-section-1__breadcrumbs breadcrumbs">
+              <a href="./index.html" class="breadcrumbs__link _icon-home"></a>
+              <a href="#" class="breadcrumbs__link">Мерч</a>
+              <a href="#" class="breadcrumbs__link">Футболки</a>
+              <a href="#" class="breadcrumbs__link breadcrumbs__link_current"
+                >Футболка «A» (червона, unisex)</a
+              >
+            </nav>
+            <div class="product-section-1__body body-product-section-1">
+              <div class="body-product-section-1__content">
+                <img
+                  class="body-product-section-1__image"
+                  data-src="@img/general/store/card-image_4_lg.png"
+                  alt="image"
+                />
+              </div>
+              <div
+                class="body-product-section-1__info info-body-product-section-1"
+              >
+                <h1 class="info-body-product-section-1__title">
+                  Футболка «A» (червона, unisex)
+                </h1>
+                <div class="info-body-product-section-1__price">350 ₴</div>
+                <div class="info-body-product-section-1__material">
+                  Склад: 100% бавовна
+                </div>
+                <div class="info-body-product-section-1__material">
+                  Щільність: 155 г/м2
+                </div>
+                <!-- todo fd make radio buttons-->
+                <div class="info-body-product-section-1__size">XS S M L XL</div>
+                <button
+                  type="button"
+                  class="info-body-product-section-1__add-btn"
+                >
+                  Додати у кошик
+                </button>
+                <div class="info-body-product-section-1__share">
+                  <span></span>
+                  <ul>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="info-body-product-section-1__links">
+                  <a
+                    href="#"
+                    class="info-body-product-section-1__link-info _icon-delivery"
+                  >
+                    <span>Способи доставки та безкоштовна доставка</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="info-body-product-section-1__link-info _icon-card"
+                  >
+                    <span> Способи оплати </span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="product-section-1__bottom bottom-product-section-1">
+              <h3 class="bottom-product-section-1__heading"></h3>
+              <ul class="bottom-product-section-1__list"></ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{} )
+  </body>
+</html>

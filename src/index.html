@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ua">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <div class="page__section-1 section-1">
+          <div class="section-1__container">
+            <img
+              class="section-1__main-screen-image"
+              data-src="@img/home/main-screen.png"
+              alt="image"
+            />
+            <button type="button" class="section-1__button-drop-down">
+              <span class="_icon-down-circle"></span>
+            </button>
+          </div>
+        </div>
+        <section class="page__section-2 section-2">
+          <div class="section-2__container">
+            <h1 class="section-2__title">Концерти</h1>
+            <table class="section-2__table table-section-2">
+              <tbody class="table-section-2__body">
+                <tr class="table-section-2__row">
+                  <td class="table-section-2__date">3 червня</td>
+                  <td class="table-section-2__place">
+                    Харків <span>Палац спорту</span>
+                  </td>
+                  <td class="table-section-2__status">
+                    <div class="label label_active"><span>Квитки</span></div>
+                  </td>
+                </tr>
+                <tr class="table-section-2__row">
+                  <td class="table-section-2__date">5 червня</td>
+                  <td class="table-section-2__place">
+                    Харків <span>Палац спорту</span>
+                  </td>
+                  <td class="table-section-2__status">
+                    <div class="label label_info"><span>Відмінено</span></div>
+                  </td>
+                </tr>
+                <tr class="table-section-2__row">
+                  <td class="table-section-2__date">6 червня</td>
+                  <td class="table-section-2__place">
+                    Харків <span>Палац спорту</span>
+                  </td>
+                  <td class="table-section-2__status">
+                    <div class="label label_info"><span>Перенесено</span></div>
+                  </td>
+                </tr>
+                <tr class="table-section-2__row">
+                  <td class="table-section-2__date">7 червня</td>
+                  <td class="table-section-2__place">
+                    Харків <span>Палац спорту</span>
+                  </td>
+                  <td class="table-section-2__status">
+                    <div class="label label_inactive">
+                      <span>SOLD OUT</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-section-2__row">
+                  <td class="table-section-2__date">9 червня</td>
+                  <td class="table-section-2__place">
+                    Харків <span>Палац спорту</span>
+                  </td>
+                  <td class="table-section-2__status">
+                    <div class="label label_active">
+                      <span>Квитки</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-section-2__row">
+                  <td class="table-section-2__date">11 червня</td>
+                  <td class="table-section-2__place">
+                    Харків <span>Палац спорту</span>
+                  </td>
+                  <td class="table-section-2__status">
+                    <div class="label label_inactive">
+                      <span>SOLD OUT</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="table-section-2__row">
+                  <td class="table-section-2__date">14 червня</td>
+                  <td class="table-section-2__place">
+                    Харків <span>Палац спорту</span>
+                  </td>
+                  <td class="table-section-2__status">
+                    <div class="label label_active">
+                      <span>Квитки</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <button type="button" class="table-section-2__button">
+              Всі дати
+            </button>
+          </div>
+        </section>
+        <div class="page__section-3 section-3">
+          <div class="section-3__container">
+            <img
+              class="section-3__image"
+              data-src="@img/home/section-3.png"
+              alt="image"
+            />
+            <p class="section-3__text">
+              ПРЕМ’ЄРА!
+              <span class="section-3__text_size_small">Дивись на YouTube!</span>
+            </p>
+          </div>
+        </div>
+        <section class="page__section-4 section-4">
+          <div class="section-4__container">
+            <h1 class="section-4__title">Мерч</h1>
+            <div class="section-4__slider swiper">
+              <div class="section-4__wrapper swiper-wrapper">
+                <div class="section-4__slide swiper-slide">
+                  <article class="section-4-card">
+                    <div class="section-4-card__body">
+                      <div class="section-4-card__image-ib">
+                        <img
+                          data-src="@img/general/store/card-image_1.png"
+                          alt="card-image"
+                        />
+                      </div>
+                    </div>
+                    <div class="section-4-card__footer">
+                      <h2 class="section-4-card__heading">
+                        Магніт «АНТИТІЛА» 10Х6СМ
+                      </h2>
+                      <small class="section-4-card__price">30 ₴</small>
+                    </div>
+                  </article>
+                </div>
+                <div class="section-4__slide swiper-slide">
+                  <article class="section-4-card">
+                    <div class="section-4-card__body">
+                      <div class="section-4-card__image-ib">
+                        <img
+                          data-src="@img/general/store/card-image_2.png"
+                          alt="card-image"
+                        />
+                      </div>
+                    </div>
+                    <div class="section-4-card__footer">
+                      <h2 class="section-4-card__heading">
+                        Магніт «АНТИТІЛА» 10Х6СМ
+                      </h2>
+                      <small class="section-4-card__price">30 ₴</small>
+                    </div>
+                  </article>
+                </div>
+                <div class="section-4__slide swiper-slide">
+                  <article class="section-4-card">
+                    <div class="section-4-card__body">
+                      <div class="section-4-card__image-ib">
+                        <img
+                          data-src="@img/general/store/card-image_3.png"
+                          alt="card-image"
+                        />
+                      </div>
+                    </div>
+                    <div class="section-4-card__footer">
+                      <h2 class="section-4-card__heading">
+                        Магніт «АНТИТІЛА» 10Х6СМ
+                      </h2>
+                      <small class="section-4-card__price">30 ₴</small>
+                    </div>
+                  </article>
+                </div>
+                <div class="section-4__slide swiper-slide">
+                  <article class="section-4-card">
+                    <div class="section-4-card__body">
+                      <div class="section-4-card__image-ib">
+                        <img
+                          data-src="@img/general/store/card-image_4.png"
+                          alt="card-image"
+                        />
+                      </div>
+                    </div>
+                    <div class="section-4-card__footer">
+                      <h2 class="section-4-card__heading">
+                        Магніт «АНТИТІЛА» 10Х6СМ
+                      </h2>
+                      <small class="section-4-card__price">30 ₴</small>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="section-4__slider__swiper-button-prev"
+              ></button>
+              <button
+                type="button"
+                class="section-4__slider__swiper-button-next"
+              ></button>
+            </div>
+            <button type="button" class="button-get-all">all</button>
+          </div>
+        </section>
+        <section class="page__section-5 section-5">
+          <div class="section-5__container">
+            <h1 class="section-5__title">Релізи</h1>
+            <div class="section-5__slider swiper">
+              <div class="section-5__wrapper swiper-wrapper">
+                <div class="section-5__slide swiper-slide">
+                  <a href="#" class="section-5__image-ib"
+                    ><img
+                      data-src="@img/home/section-5.png"
+                      alt="section-5 image"
+                  /></a>
+                </div>
+              </div>
+              <button type="button" class="swiper-button-prev"></button>
+              <button type="button" class="swiper-button-next"></button>
+            </div>
+            <button type="button" class="button-get-all">Всі релізи</button>
+          </div>
+        </section>
+        <section class="page__section-6 section-6">
+          <div class="section-6__container">
+            <h1 class="section-6__title">Відео</h1>
+            <div class="section-6__grid grid-video-section-6">
+              <div class="grid-video-section-6__row row-col-2-section-6">
+                <div
+                  class="grid-video-section-6__item row-col-2-section-6__item"
+                >
+                  <video
+                    class="grid-video-section-6__video row-col-2-section-6__video"
+                    muted
+                    poster="@img/home/video-poster_1.jpg"
+                  >
+                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                  </video>
+                  <button
+                    type="button"
+                    class="grid-video-section-6__control-button"
+                  >
+                    <span class="_icon-play"></span>
+                  </button>
+                </div>
+                <div
+                  class="grid-video-section-6__item row-col-2-section-6__item"
+                >
+                  <video
+                    class="grid-video-section-6__video row-col-2-section-6__video"
+                    muted
+                    poster="@img/home/video-poster_1.jpg"
+                  >
+                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                  </video>
+                  <button
+                    type="button"
+                    class="grid-video-section-6__control-button"
+                  >
+                    <span class="_icon-play"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="grid-video-section-6__row row-col-3-section-6">
+                <div
+                  class="grid-video-section-6__item row-col-3-section-6__item"
+                >
+                  <video
+                    class="grid-video-section-6__video row-col-3-section-6__video"
+                    muted
+                    poster="@img/home/video-poster_1.jpg"
+                  >
+                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                  </video>
+                  <button
+                    type="button"
+                    class="grid-video-section-6__control-button"
+                  >
+                    <span class="_icon-play"></span>
+                  </button>
+                </div>
+                <div
+                  class="grid-video-section-6__item row-col-3-section-6__item"
+                  data-deleteOn="479"
+                >
+                  <video
+                    class="grid-video-section-6__video row-col-3-section-6__video"
+                    muted
+                    poster="@img/home/video-poster_1.jpg"
+                  >
+                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                  </video>
+                  <button
+                    type="button"
+                    class="grid-video-section-6__control-button"
+                  >
+                    <span class="_icon-play"></span>
+                  </button>
+                </div>
+                <div
+                  class="grid-video-section-6__item row-col-3-section-6__item"
+                  data-deleteOn="768"
+                >
+                  <video
+                    class="grid-video-section-6__video row-col-3-section-6__video"
+                    muted
+                    poster="@img/home/video-poster_1.jpg"
+                  >
+                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                  </video>
+                  <button
+                    type="button"
+                    class="grid-video-section-6__control-button"
+                  >
+                    <span class="_icon-play"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="button-get-all">
+              Більше відео на YouTube
+            </button>
+          </div>
+        </section>
+        <section class="page__section-7 section-7">
+          <div class="section-7__container">
+            <h1 class="section-7__title">Фото</h1>
+            <div class="section-7__gallery gallery-section-7">
+              <div class="gallery-section-7__grid">
+                <div
+                  class="gallery-section-7__item gallery-section-7__item_span_2"
+                >
+                  <img
+                    class="gallery-section-7__image"
+                    data-src="@img/home/gallery-image_1_lg.jpg"
+                    alt="image"
+                  />
+                  <span class="gallery-section-7__image-date"
+                    >Тур Hello, Харків - 07.06.2019</span
+                  >
+                </div>
+                <div class="gallery-section-7__item">
+                  <img
+                    class="gallery-section-7__image"
+                    data-src="@img/home/gallery-image_1_sm.jpg"
+                    alt="image"
+                  />
+                  <span class="gallery-section-7__image-date"
+                    >Тур Hello, Харків - 07.06.2019</span
+                  >
+                </div>
+                <div class="gallery-section-7__item">
+                  <img
+                    class="gallery-section-7__image"
+                    data-src="@img/home/gallery-image_1_sm.jpg"
+                    alt="image"
+                  />
+                  <span class="gallery-section-7__image-date"
+                    >Тур Hello, Харків - 07.06.2019</span
+                  >
+                </div>
+              </div>
+            </div>
+            <button type="button" class="button-get-all">Всі фото</button>
+          </div>
+        </section>
+        <section class="page__section-8 section-8">
+          <div class="section-8__container">
+            <h1 class="section-8__title">Новини</h1>
+            <ul class="section-8__list">
+              <li class="section-8__item">
+                <article class="section-8__card card-section-8">
+                  <div class="card-section-8__image-ibg">
+                    <img
+                      data-src="@img/home/news-image_1.jpg"
+                      alt="card image"
+                    />
+                  </div>
+                  <div class="card-section-8__body">
+                    <h2 class="card-section-8__heading">
+                      Все буде так, як ти захочеш!
+                    </h2>
+                    <p class="card-section-8__text">
+                      Антитіла та Марина Бех-Романчук прожили у кадрі ціле
+                      життя. Гучна прем’єра від гурту Антитіла. Після
+                      танцювальної пісні «Маскарад» [...]
+                    </p>
+                  </div>
+                  <div class="card-section-8__footer">
+                    <div class="card-section-8__date">10.10.2021</div>
+                    <a href="#" class="card-section-8__button">Читати далі</a>
+                  </div>
+                </article>
+              </li>
+              <li class="section-8__item">
+                <article class="section-8__card card-section-8">
+                  <div class="card-section-8__image-ibg">
+                    <img
+                      data-src="@img/home/news-image_1.jpg"
+                      alt="card image"
+                    />
+                  </div>
+                  <div class="card-section-8__body">
+                    <h2 class="card-section-8__heading">
+                      Все буде так, як ти захочеш!
+                    </h2>
+                    <p class="card-section-8__text">
+                      Антитіла та Марина Бех-Романчук прожили у кадрі ціле
+                      життя. Гучна прем’єра від гурту Антитіла. Після
+                      танцювальної пісні «Маскарад» [...]
+                    </p>
+                  </div>
+                  <div class="card-section-8__footer">
+                    <div class="card-section-8__date">10.10.2021</div>
+                    <a href="#" class="card-section-8__button">Читати далі</a>
+                  </div>
+                </article>
+              </li>
+              <li class="section-8__item">
+                <article class="section-8__card card-section-8">
+                  <div class="card-section-8__image-ibg">
+                    <img
+                      data-src="@img/home/news-image_1.jpg"
+                      alt="card image"
+                    />
+                  </div>
+                  <div class="card-section-8__body">
+                    <h2 class="card-section-8__heading">
+                      Все буде так, як ти захочеш!
+                    </h2>
+                    <p class="card-section-8__text">
+                      Антитіла та Марина Бех-Романчук прожили у кадрі ціле
+                      життя. Гучна прем’єра від гурту Антитіла. Після
+                      танцювальної пісні «Маскарад» [...]
+                    </p>
+                  </div>
+                  <div class="card-section-8__footer">
+                    <div class="card-section-8__date">10.10.2021</div>
+                    <a href="#" class="card-section-8__button">Читати далі</a>
+                  </div>
+                </article>
+              </li>
+              <li class="section-8__item">
+                <article class="section-8__card card-section-8">
+                  <div class="card-section-8__image-ibg">
+                    <img
+                      data-src="@img/home/news-image_1.jpg"
+                      alt="card image"
+                    />
+                  </div>
+                  <div class="card-section-8__body">
+                    <h2 class="card-section-8__heading">
+                      Все буде так, як ти захочеш!
+                    </h2>
+                    <p class="card-section-8__text">
+                      Антитіла та Марина Бех-Романчук прожили у кадрі ціле
+                      життя. Гучна прем’єра від гурту Антитіла. Після
+                      танцювальної пісні «Маскарад» [...]
+                    </p>
+                  </div>
+                  <div class="card-section-8__footer">
+                    <div class="card-section-8__date">10.10.2021</div>
+                    <a href="#" class="card-section-8__button">Читати далі</a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button type="button" class="button-get-all">Всі новини</button>
+          </div>
+        </section>
+        <section class="page__section-9 section-9">
+          <div class="section-9__container">
+            <h1 class="section-9__title">АНТИТІЛА в Instagram</h1>
+            <div class="section-9__grid grid-section-9">
+              <div class="grid-section-9__item">
+                <a href="" class="grid-section-9__image-ibg"
+                  ><img
+                    data-src="@img/home/inst-image_1.jpg"
+                    alt="instagram image"
+                /></a>
+              </div>
+              <div class="grid-section-9__item">
+                <a href="" class="grid-section-9__image-ibg"
+                  ><img
+                    data-src="@img/home/inst-image_1.jpg"
+                    alt="instagram image"
+                /></a>
+              </div>
+              <div class="grid-section-9__item">
+                <a href="" class="grid-section-9__image-ibg"
+                  ><img
+                    data-src="@img/home/inst-image_1.jpg"
+                    alt="instagram image"
+                /></a>
+              </div>
+              <div class="grid-section-9__item">
+                <a href="" class="grid-section-9__image-ibg"
+                  ><img
+                    data-src="@img/home/inst-image_1.jpg"
+                    alt="instagram image"
+                /></a>
+              </div>
+              <div class="grid-section-9__item">
+                <a href="" class="grid-section-9__image-ibg"
+                  ><img
+                    data-src="@img/home/inst-image_1.jpg"
+                    alt="instagram image"
+                /></a>
+              </div>
+              <div class="grid-section-9__item">
+                <a href="" class="grid-section-9__image-ibg"
+                  ><img
+                    data-src="@img/home/inst-image_1.jpg"
+                    alt="instagram image"
+                /></a>
+              </div>
+              <div class="grid-section-9__item">
+                <a href="" class="grid-section-9__image-ibg"
+                  ><img
+                    data-src="@img/home/inst-image_1.jpg"
+                    alt="instagram image"
+                /></a>
+              </div>
+            </div>
+            <button type="button" class="button-get-all">
+              Підписатися на Instagram
+            </button>
+          </div>
+        </section>
+        <div class="page__section-10 section-10">
+          <div class="section-10__container">
+            <div class="section-10__left-side">
+              <img
+                src="@img/home/logo_lg.png"
+                alt="section-10 image"
+                class="section-10__image"
+              />
+            </div>
+            <div class="section-10__right-side">
+              <div class="section-10__content-box">
+                <h2 class="section-10__title">ФАНТИТІЛА КОМ’ЮНІТІ</h2>
+                <p class="section-10__text">
+                  Стань частиною Антитіл. Приєднуйся до офіційного ком'юніті.
+                </p>
+                <ul class="section-10__list">
+                  <li class="section-10__item">
+                    <a href="#" class="section-10__social-link _icon-fb"></a>
+                  </li>
+                  <li class="section-10__item">
+                    <a href="#" class="section-10__social-link _icon-inst"></a>
+                  </li>
+                  <li class="section-10__item">
+                    <a
+                      href="#"
+                      class="section-10__social-link _icon-telegram"
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page__divider divider">
+          <div class="divider__container">
+            <img
+              src="@img/home/divider-image_bg.jpg"
+              alt="divider image"
+              class="divider__background-image"
+            />
+          </div>
+        </div>
+        <section class="page__contacts contacts">
+            <div class="contacts__container">
+                <h1 class="contacts__title">Контакти</h1>
+                <div class="contacts__body">
+                    <ul class="contacts__list contacts-list">
+                        <li class="contacts-list__post">Директор</li>
+                        <li class="contacts-list__name">Сергій Вусик</li>
+                        <li class="contacts-list__number">
+                            <a href="tel:380688911912" class="contacts-list__number-link _icon-phone">+38(068)891-19-12</a>
+                        </li>
+                        <li class="contacts-list__email">
+                            <a href="mailto:vusonsergey@gmail.com" class="contacts-list__email-link _icon-mail">vusonsergey@gmail.com</a>
+                        </li>
+                        <li class="contacts-list__social"><a href="#" class="contacts-list__social-link _icon-fb"></a></li>
+                    </ul>
+                    <ul class="contacts__list contacts-list">
+                        <li class="contacts-list__post">Концерти закордоном</li>
+                        <li class="contacts-list__name">Євген Антипенко</li>
+                        <li class="contacts-list__number">
+                            <a href="tel:380674621450" class="contacts-list__number-link _icon-phone">+38(067)462-14-50</a>
+                        </li>
+                        <li class="contacts-list__email">
+                            <a href="mailto:onegintwins@gmail.com" class="contacts-list__email-link _icon-mail">onegintwins@gmail.com</a>
+                        </li>
+                        <li class="contacts-list__social"><a href="#" class="contacts-list__social-link _icon-fb"></a></li>
+                    </ul>
+                    <ul class="contacts__list contacts-list">
+                        <li class="contacts-list__post">PR</li>
+                        <li class="contacts-list__name">Анна Долинська</li>
+                        <li class="contacts-list__number">
+                            <a href="tel:380638438530" class="contacts-list__number-link _icon-phone">+38(063)843-85-30</a>
+                        </li>
+                        <li class="contacts-list__email">
+                            <a href="mailto:pr@antytila.com" class="contacts-list__email-link _icon-mail">pr@antytila.com</a>
+                        </li>
+                        <li class="contacts-list__email">
+                            <a href="mailto:dolynskapr@gmail.com" class="contacts-list__email-link _icon-mail">dolynskapr@gmail.com</a>
+                        </li>
+                        <li class="contacts-list__social"><a href="#" class="contacts-list__social-link _icon-fb"></a></li>
+                    </ul>
+                    <ul class="contacts__list contacts-list">
+                        <li class="contacts-list__post">Звукорежисер</li>
+                        <li class="contacts-list__name">Дмитро Нужний</li>
+                        <li class="contacts-list__number">
+                            <a href="tel:380675965626" class="contacts-list__number-link _icon-phone">+38(067)596-56-26</a>
+                        </li>
+                        <li class="contacts-list__email">
+                            <a href="mailto:mail2phoenix@yahoo.com" class="contacts-list__email-link _icon-mail">mail2phoenix@yahoo.com</a>
+                        </li>
+                        <li class="contacts-list__social"><a href="#" class="contacts-list__social-link _icon-fb"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_burger-menu.htm',{})
+    @@include('html/_background-block.htm',{}) @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{} )
+  </body>
+</html>

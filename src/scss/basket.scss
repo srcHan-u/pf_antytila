@@ -1,0 +1,246 @@
+.page {
+    &_basket {
+        background-color: #e1e7e4;
+    }
+
+    &__basket-section-1 {
+        padding-top: rem(36);
+    }
+}
+.basket-section-1 {
+    &__container {
+    }
+
+    &__breadcrumbs {
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__element {
+        flex: 0 1 percent(776, 1176);
+    }
+
+    &__form {
+        flex: 0 1 rem(376);
+    }
+}
+
+.element-basket {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 0 rem(24) rem(24) rem(24);
+    &__header {
+    }
+
+    &__body {
+    }
+}
+.header-element-basket {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: rem(53);
+    border-bottom: 1px solid #e0e0e0;
+    &__heading {
+        font-family: "albertusnovalight";
+        font-weight: 300;
+        font-size: rem(18);
+        line-height: math.div(25, 18);
+    }
+
+    &__count {
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(19, 14);
+        color: $mainColorGray;
+    }
+
+    &__count-number {
+    }
+}
+.body-element-basket {
+    padding-top: rem(16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__info {
+    }
+    &__action {
+    }
+}
+
+.info-element-basket {
+    display: flex;
+    align-items: center;
+    column-gap: rem(24);
+    &__image {
+        max-width: rem(152);
+        width: 100%;
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(8);
+    }
+    &__title {
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(19, 14);
+    }
+    &__size {
+        color: #2d2d2d;
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(19, 14);
+        display: flex;
+        align-items: center;
+        column-gap: rem(8);
+        span {
+            color: $mainColorGray;
+        }
+    }
+}
+
+.action-element-basket {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    &__counter {
+        &:not(:last-child) {
+            margin-right: rem(24);
+        }
+    }
+    &__price {
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: math.div(25, 18);
+        display: flex;
+        align-items: center;
+        column-gap: rem(8);
+        flex: 0 0 auto;
+        &:not(:last-child) {
+            margin-right: rem(50);
+        }
+        del {
+            font-size: rem(14);
+            line-height: math.div(19, 14);
+            color: $mainColorGray;
+        }
+    }
+    &__button-clear {
+        flex: 0 1 16px;
+        height: rem(16);
+        > img {
+            width: 100%;
+        }
+    }
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    // padding: rem(24);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0 rem(24) rem(24) rem(24);
+    row-gap: rem(16);
+    &__header {
+    }
+
+    &__body {
+    }
+
+    &__button-submit {
+        width: 100%;
+        background-color: $mainColorRed;
+        font-family: "albertusnova";
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(22, 16);
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        padding: em(10.5, 16) 0;
+    }
+}
+.header-order-form {
+    min-height: rem(53);
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__heading {
+        font-family: "albertusnovalight";
+        font-weight: 300;
+        font-size: rem(18);
+        line-height: math.div(25, 18);
+    }
+}
+.body-order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: rem(14);
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: rem(16);
+    &__field {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &_status_sum {
+        }
+
+        &_status_discount {
+        }
+
+        &_status_promocode {
+            height: rem(40);
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #989898;
+        }
+
+        &_status_total {
+            font-family: "OpenSans";
+            font-weight: 600;
+            font-size: rem(14);
+            line-height: math.div(19, 14);
+        }
+    }
+
+    &__filed-value {
+    }
+
+    &__input-promocode {
+        height: 100%;
+        width: 100%;
+        padding-left: rem(15);
+    }
+
+    &__button-promocode {
+        height: 100%;
+        width: rem(76);
+        background: $mainColorGray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "albertusnova";
+        font-weight: 400;
+        font-size: rem(14);
+        line-height: math.div(20, 14);
+        color: #ffffff;
+    }
+}

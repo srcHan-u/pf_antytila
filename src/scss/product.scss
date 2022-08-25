@@ -1,0 +1,125 @@
+.page {
+    &_product {
+    }
+
+    &__product-section-1 {
+        @include adaptiveValue("padding-bottom", 100, 50);
+        padding-top: rem(24);
+    }
+}
+.product-section-1 {
+    &__container {
+    }
+
+    &__body {
+    }
+    &__bottom {
+    }
+    &__breadcrumbs {
+        &:not(:last-child) {
+            margin-bottom: rem(48);
+        }
+    }
+}
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: rem(4);
+    &__link {
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(12);
+        line-height: math.div(16, 12);
+        color: $mainColorGray;
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: rem(4);
+        &._icon-home {
+            font-size: rem(18);
+        }
+        &:not(:last-child) {
+            &::after {
+                font-size: rem(15);
+                @extend %ic;
+                content: "\e901";
+            }
+        }
+        &_current {
+            color: $mainColor;
+            cursor: default;
+        }
+    }
+}
+
+.body-product-section-1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &__content {
+        flex: 0 1 percent(476, 1176);
+    }
+
+    &__info {
+        flex: 0 1 rem(576);
+    }
+    &__image {
+        min-width: rem(290);
+        width: 100%;
+    }
+}
+.info-body-product-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: rem(24);
+    &__title {
+        @include h1;
+    }
+
+    &__price {
+        font-family: "albertusnova";
+        font-weight: 400;
+        font-size: rem(24);
+        line-height: math.div(33, 24);
+        color: $mainColorBlack;
+    }
+
+    &__material {
+    }
+
+    &__size {
+    }
+
+    &__add-btn {
+        background: $mainColorRed;
+        border-radius: em(5, 16);
+        font-family: "albertusnova";
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(22, 16);
+        text-align: center;
+        color: #ffffff;
+        padding: em(10.5, 16) em(76, 16);
+    }
+
+    &__share {
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(21);
+    }
+    &__link-info {
+        font-size: rem(24);
+        display: flex;
+        column-gap: rem(18);
+        span {
+            font-family: "OpenSans";
+            font-weight: 400;
+            font-size: rem(14);
+            line-height: math.div(19, 14);
+            text-decoration: underline;
+        }
+    }
+}
