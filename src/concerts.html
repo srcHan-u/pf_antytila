@@ -5,139 +5,91 @@
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page page_concerts">
-        <div class="page__concerts-section-1 concerts-section-1">
-            <div class="concerts-section-1__container">
-                <img src="@img/concerts/main-screen.jpg" alt="main screen image" class="concerts-section-1__image">
+        <div class="page__general-first-screen general-first-screen">
+            <div class="general-first-screen__container">
+                <img src="@img/concerts/main-screen.jpg" alt="main screen image" class="general-first-screen__image">
             </div>
         </div>
-        <section class="page__concerts-section-2 section-2">
-            <div class="section-2__container">
-              <h1 class="section-2__title">Концерти</h1>
-              <table class="section-2__table table-section-2">
-                <tbody class="table-section-2__body">
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">3 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
+        <section class="page__concerts page__concerts_bottom_padding concerts">
+            <div class="concerts__container">
+              <h1 class="concerts__title">Концерти</h1>
+              <table class="concerts__table table-concerts">
+                <tbody class="table-concerts__body">
+                  <tr class="table-concerts__row">
+                    <td class="table-concerts__inner">
+                      <div class="table-concerts__date">3 червня</div>
+                      <div class="table-concerts__place">
+                        Харків <span>Палац спорту</span>
+                      </div>
                     </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_active"><span>Квитки</span></div>
-                    </td>
-                  </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">5 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
-                    </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_info"><span>Відмінено</span></div>
+                    <td class="table-concerts__status">
+                      <a class="label label_active" href="#"
+                        ><span>Квитки</span></a
+                      >
                     </td>
                   </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">6 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
+                  <tr class="table-concerts__row">
+                    <td class="table-concerts__inner">
+                      <div class="table-concerts__date">4 червня</div>
+                      <div class="table-concerts__place">
+                        Харків <span>Палац спорту</span>
+                      </div>
                     </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_info"><span>Перенесено</span></div>
+                    <td class="table-concerts__status">
+                      <a class="label label_info" href="#"
+                        ><span>Відмінено</span></a
+                      >
                     </td>
                   </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">7 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
+                  <tr class="table-concerts__row">
+                    <td class="table-concerts__inner">
+                      <div class="table-concerts__date">5 червня</div>
+                      <div class="table-concerts__place">
+                        Харків <span>Палац спорту</span>
+                      </div>
                     </td>
-                    <td class="table-section-2__status">
+                    <td class="table-concerts__status">
+                      <a class="label label_info" href="#"
+                        ><span>Перенесено</span></a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-concerts__row">
+                    <td class="table-concerts__inner">
+                      <div class="table-concerts__date">23 липня</div>
+                      <div class="table-concerts__place">
+                        Харків <span>Палац спорту</span>
+                      </div>
+                    </td>
+                    <td class="table-concerts__status">
                       <div class="label label_inactive">
                         <span>SOLD OUT</span>
                       </div>
                     </td>
                   </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">9 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
-                    </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_active">
-                        <span>Квитки</span>
+                  <tr class="table-concerts__row">
+                    <td class="table-concerts__inner">
+                      <div class="table-concerts__date">23 серпня</div>
+                      <div class="table-concerts__place">
+                        Харків <span>Палац спорту</span>
                       </div>
                     </td>
-                  </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">11 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
+                    <td class="table-concerts__status">
+                      <a class="label label_active" href="#"
+                        ><span>Квитки</span></a
+                      >
                     </td>
-                    <td class="table-section-2__status">
+                  </tr>
+                  <tr class="table-concerts__row">
+                    <td class="table-concerts__inner">
+                      <div class="table-concerts__date">1 вересня</div>
+                      <div class="table-concerts__place">
+                        Харків <span>Палац спорту</span>
+                      </div>
+                    </td>
+                    <td class="table-concerts__status">
                       <div class="label label_inactive">
                         <span>SOLD OUT</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">14 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
-                    </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_active">
-                        <span>Квитки</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">14 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
-                    </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_active">
-                        <span>Квитки</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">14 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
-                    </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_active">
-                        <span>Квитки</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">14 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
-                    </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_active">
-                        <span>Квитки</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">14 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
-                    </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_active">
-                        <span>Квитки</span>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="table-section-2__row">
-                    <td class="table-section-2__date">14 червня</td>
-                    <td class="table-section-2__place">
-                      Харків <span>Палац спорту</span>
-                    </td>
-                    <td class="table-section-2__status">
-                      <div class="label label_active">
-                        <span>Квитки</span>
                       </div>
                     </td>
                   </tr>

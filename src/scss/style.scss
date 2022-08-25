@@ -165,6 +165,9 @@ body {
     }
     &__concerts {
         padding: rem(48) 0;
+        &_bottom_padding {
+            @include adaptiveValue("padding-bottom", 100, 48);
+        }
     }
     &__section-3 {
         background: url("@img/home/section-3_bg.jpg") no-repeat;
@@ -180,6 +183,8 @@ body {
         padding-top: rem(48);
     }
     &_about {
+    }
+    &_concerts {
     }
 }
 // Подключение стилей отдельных страниц

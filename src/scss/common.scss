@@ -20,6 +20,7 @@
     line-height: math.div(22, 16);
     color: $mainColorBlack;
     position: relative;
+    display: block;
     @media (any-hover: hover) {
         &:hover {
             &::before {
@@ -417,7 +418,7 @@
 
 //
 
-.concerts-section-1 {
+.general-first-screen {
     &__container {
         padding: 0;
         margin: 0;
@@ -442,5 +443,6 @@
         // height: auto;
         width: 100%;
         max-height: rem(500);
+        min-height: rem(375);
     }
 }

@@ -74,7 +74,8 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        gap: rem(15);
+        column-gap: rem(15);
+        row-gap: rem(5);
         @media (max-width: $mobileSmall) {
             flex-direction: column;
         }
@@ -141,6 +142,7 @@
         line-height: math.div(25, 18);
         color: $mainColorRed;
         background-color: rgba($color: $mainColorRed, $alpha: 0.2);
+        text-transform: uppercase;
     }
 }
 
