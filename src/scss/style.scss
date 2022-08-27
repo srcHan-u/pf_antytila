@@ -169,8 +169,8 @@ body {
             @include adaptiveValue("padding-bottom", 100, 48);
         }
     }
-    &__section-3 {
-        background: url("@img/home/section-3_bg.jpg") no-repeat;
+    &__alert-block {
+        background: url("@img/home/alert-block_bg.jpg") no-repeat;
         background-size: cover;
         padding: rem(48) 0;
     }

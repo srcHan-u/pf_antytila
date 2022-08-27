@@ -148,21 +148,28 @@
 
 //====================================================================================================
 
-.section-3 {
+.alert-block {
     &__container {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        column-gap: rem(66);
+        column-gap: rem(10);
+        max-width: rem(710);
     }
-
+    &__box {
+        flex: 0 1 rem(334);
+    }
     &__image {
+        width: 100%;
+        object-fit: cover;
+        min-width: rem(190);
     }
 
     &__text {
+        flex: 0 1 rem(310);
         font-family: "albertusnova";
         font-weight: 300;
-        font-size: rem(40);
+        @include adaptiveValue("font-size", 40, 24);
         line-height: math.div(55, 40);
         color: #ffffff;
         display: flex;
@@ -170,7 +177,7 @@
 
         &_size_small {
             display: block;
-            font-size: rem(32);
+            @include adaptiveValue("font-size", 32, 20);
             line-height: math.div(44, 32);
         }
     }
