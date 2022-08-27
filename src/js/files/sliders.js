@@ -73,8 +73,8 @@ function initSliders() {
 
 			// Кнопки "влево/вправо"
 			navigation: {
-				prevEl: '.stuff__slider__swiper-button-prev',
-				nextEl: '.stuff__slider__swiper-button-next',
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next',
 			},
 
 			// Брейкпоинты
@@ -91,6 +91,74 @@ function initSliders() {
 				992: {
 					slidesPerView: 3.4,
 					spaceBetween: 20,
+				},
+			},
+			
+			// События
+			on: {
+
+			}
+		});
+	}
+	if (document.querySelector('.releases__inner') && window.innerWidth < 769) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.releases__inner', { // Указываем скласс нужного слайдера
+			// Подключаем модули слайдера
+			// для конкретного случая
+			modules: [Navigation],
+			observer: true,
+			observeParents: true,
+			spaceBetween: 24,
+			autoHeight: false,
+			speed: 800,
+
+			//touchRatio: 0,
+			simulateTouch: true,
+			//loop: true,
+			//preloadImages: false,
+			//lazy: true,
+
+			/*
+			// Эффекты
+			effect: 'fade',
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false,
+			},
+			*/
+
+			// Пагинация
+			/*
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			*/
+
+			// Скроллбар
+			/*
+			scrollbar: {
+				el: '.swiper-scrollbar',
+				draggable: true,
+			},
+			*/
+
+			// Кнопки "влево/вправо"
+			navigation: {
+				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-button-next',
+			},
+
+			// Брейкпоинты
+			
+			breakpoints: {
+				320: {
+					slidesPerView: 2.3,
+					autoHeight: true,
+
+                },
+				420: {
+					slidesPerView: 3.5,
 				},
 			},
 			

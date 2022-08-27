@@ -185,11 +185,6 @@
 
 // ===========================
 
-.page {
-    &__stuff {
-        padding: rem(48) 0;
-    }
-}
 .stuff {
     &__container {
         max-width: rem(1176);
@@ -200,6 +195,7 @@
     }
     &__inner {
         width: 100%;
+        position: relative;
         &_margin_bottom_24px {
             &:not(:last-child) {
                 margin-bottom: rem(24);
@@ -213,8 +209,6 @@
         // gap: rem(24);
     }
     &__item {
-        // flex: 0 1 25%;
-        // max-width: rem(276);
     }
     &__title {
         @include h1;
@@ -225,12 +219,13 @@
     }
 }
 
-.page {
-    &__section-5 {
-    }
-}
-.section-5 {
+// ==============
+
+.releases {
     &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__title {
@@ -241,19 +236,68 @@
         }
     }
 
-    &__slider {
+    &__inner {
+        width: 100%;
+        position: relative;
         &:not(:last-child) {
             margin-bottom: rem(28);
         }
     }
 
-    &__wrapper {
+    &__list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: rem(24);
+        @media (max-width: em(769)) {
+            flex-wrap: nowrap;
+            row-gap: 0;
+        }
     }
 
-    &__slide {
+    &__item {
+        flex: 0 0 rem(176);
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        @media (max-width: em(769)) {
+            flex: none;
+        }
     }
 
-    &__image-ib {
+    &__image {
+        width: 100%;
+    }
+    &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "albertusnova";
+        @include adaptiveValue("font-size", 20, 14);
+        line-height: math.div(28, 20);
+        color: #fff;
+        opacity: 0;
+        transition: background-color 0.4s ease 0s, opacity 0.4s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 1;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+        @media (any-hover: none) {
+            bottom: 0;
+            top: initial;
+            height: 60%;
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
     }
 }
 

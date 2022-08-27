@@ -174,6 +174,12 @@ body {
         background-size: cover;
         padding: rem(48) 0;
     }
+    &__stuff {
+        padding: rem(48) 0;
+    }
+    &__releases {
+        padding: rem(48) 0;
+    }
     &__concerts-section-2 {
         @include adaptiveValue("padding-bottom", 100, 50);
     }
