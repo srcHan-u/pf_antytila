@@ -180,6 +180,9 @@ body {
     &__releases {
         padding: rem(48) 0;
     }
+    &__videos {
+        padding-bottom: rem(48);
+    }
     &__concerts-section-2 {
         @include adaptiveValue("padding-bottom", 100, 50);
     }

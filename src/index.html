@@ -229,8 +229,14 @@
                   </article>
                 </li>
               </ul>
-              <button type="button" class="swiper-button-prev _icon-arrow_sm"></button>
-              <button type="button" class="swiper-button-next _icon-arrow_sm"></button>
+              <button
+                type="button"
+                class="swiper-button-prev _icon-arrow_sm"
+              ></button>
+              <button
+                type="button"
+                class="swiper-button-next _icon-arrow_sm"
+              ></button>
             </div>
             <a
               class="table-concerts__button button-get-all"
@@ -243,7 +249,7 @@
         <section class="page__releases releases">
           <div class="releases__container">
             <h1 class="releases__title">Релізи</h1>
-            
+
             <div class="releases__inner swiper">
               <ul class="releases__list swiper-wrapper">
                 <li class="releases__item swiper-slide">
@@ -313,111 +319,86 @@
                   </a>
                 </li>
               </ul>
-              <button type="button" class="swiper-button-prev _icon-arrow_sm"></button>
-              <button type="button" class="swiper-button-next _icon-arrow_sm"></button>
+              <button
+                type="button"
+                class="swiper-button-prev _icon-arrow_sm"
+              ></button>
+              <button
+                type="button"
+                class="swiper-button-next _icon-arrow_sm"
+              ></button>
             </div>
             <a class="button-get-all" href="./music.html">Всі релізи</a>
           </div>
         </section>
-        <section class="page__section-6 section-6">
-          <div class="section-6__container">
-            <h1 class="section-6__title">Відео</h1>
-            <div class="section-6__grid grid-video-section-6">
-              <div class="grid-video-section-6__row row-col-2-section-6">
-                <div
-                  class="grid-video-section-6__item row-col-2-section-6__item"
-                >
-                  <video
-                    class="grid-video-section-6__video row-col-2-section-6__video"
-                    muted
-                    poster="@img/home/video-poster_1.jpg"
-                  >
-                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
-                  </video>
-                  <button
-                    type="button"
-                    class="grid-video-section-6__control-button"
-                  >
-                    <span class="_icon-play"></span>
-                  </button>
-                </div>
-                <div
-                  class="grid-video-section-6__item row-col-2-section-6__item"
-                >
-                  <video
-                    class="grid-video-section-6__video row-col-2-section-6__video"
-                    muted
-                    poster="@img/home/video-poster_1.jpg"
-                  >
-                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
-                  </video>
-                  <button
-                    type="button"
-                    class="grid-video-section-6__control-button"
-                  >
-                    <span class="_icon-play"></span>
-                  </button>
-                </div>
-              </div>
-              <div class="grid-video-section-6__row row-col-3-section-6">
-                <div
-                  class="grid-video-section-6__item row-col-3-section-6__item"
-                >
-                  <video
-                    class="grid-video-section-6__video row-col-3-section-6__video"
-                    muted
-                    poster="@img/home/video-poster_1.jpg"
-                  >
-                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
-                  </video>
-                  <button
-                    type="button"
-                    class="grid-video-section-6__control-button"
-                  >
-                    <span class="_icon-play"></span>
-                  </button>
-                </div>
-                <div
-                  class="grid-video-section-6__item row-col-3-section-6__item"
-                  data-deleteOn="479"
-                >
-                  <video
-                    class="grid-video-section-6__video row-col-3-section-6__video"
-                    muted
-                    poster="@img/home/video-poster_1.jpg"
-                  >
-                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
-                  </video>
-                  <button
-                    type="button"
-                    class="grid-video-section-6__control-button"
-                  >
-                    <span class="_icon-play"></span>
-                  </button>
-                </div>
-                <div
-                  class="grid-video-section-6__item row-col-3-section-6__item"
-                  data-deleteOn="768"
-                >
-                  <video
-                    class="grid-video-section-6__video row-col-3-section-6__video"
-                    muted
-                    poster="@img/home/video-poster_1.jpg"
-                  >
-                    <source src="./files/IMG_6171.MP4" type="video/mp4" />
-                  </video>
-                  <button
-                    type="button"
-                    class="grid-video-section-6__control-button"
-                  >
-                    <span class="_icon-play"></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="button-get-all">
-              Більше відео на YouTube
-            </button>
+        <section class="page__videos videos">
+          <div class="videos__container">
+            <h1 class="videos__title">Відео</h1>
+            <ul class="videos__list">
+                <li class="videos__item videos__item_1">
+                    <div class="video-box">
+                        <video
+                        class="videos__item-content video-box__item"
+                        muted
+                        poster="@img/home/video-poster_1.jpg"
+                      >
+                        <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                      </video>
+                      <button type="button" class="video-box__button _icon-play_arrow"></button>
+                    </div>
+                </li>
+                <li class="videos__item videos__item_2">
+                    <div class="video-box">
+                        <video
+                        class="videos__item-content video-box__item"
+                        muted
+                        poster="@img/home/video-poster_2.jpg"
+                      >
+                        <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                      </video>
+                      <button type="button" class="video-box__button _icon-play_arrow"></button>
+                    </div>
+                </li>
+                <li class="videos__item videos__item_3">
+                    <div class="video-box">
+                        <video
+                        class="videos__item-content video-box__item"
+                        muted
+                        poster="@img/home/video-poster_3_sm.jpg"
+                      >
+                        <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                      </video>
+                      <button type="button" class="video-box__button _icon-play_arrow"></button>
+                    </div>
+                </li>
+                <li class="videos__item videos__item_4">
+                    <div class="video-box">
+                        <video
+                        class="videos__item-content video-box__item"
+                        muted
+                        poster="@img/home/video-poster_4_sm.jpg"
+                      >
+                        <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                      </video>
+                      <button type="button" class="video-box__button _icon-play_arrow"></button>
+                    </div>
+                </li>
+                <li class="videos__item videos__item_5">
+                    <div class="video-box">
+                        <video
+                        class="videos__item-content video-box__item"
+                        muted
+                        poster="@img/home/video-poster_5_sm.jpg"
+                      >
+                        <source src="./files/IMG_6171.MP4" type="video/mp4" />
+                      </video>
+                      <button type="button" class="video-box__button _icon-play_arrow"></button>
+                    </div>
+                </li>
+            </ul>
+            <a class="button-get-all" href="./music.html">
+              Більше відео на YouTube</a
+            >
           </div>
         </section>
         <section class="page__section-7 section-7">

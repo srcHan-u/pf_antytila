@@ -468,3 +468,41 @@
         min-height: rem(375);
     }
 }
+
+
+// 
+
+.video-box {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    // padding-bottom: 100%;
+    height: 100%;
+    width: 100%;
+    &__item {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      // position: absolute;
+      // top: 0;
+      // left: 0;
+    }
+    &__button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(59);
+      height: rem(42);
+      background-color: rgba($color: #000000, $alpha: 0.8);
+      border-radius: 14px;
+      &::before {
+        color: #fff;
+        font-size: rem(32);
+      }
+      &.disable {
+        display: none;
+      }
+      // display: none;
+    }
+  }
