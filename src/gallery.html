@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ua">
-  @@include('html/_head.htm',{ "title":"Новости" })
+  @@include('html/_head.htm',{ "title":"Альбомы" })
   <body>
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page page_gallery">
-        <div class="page__gallery-section-1 general-first-screen">
+        <div class="general-first-screen">
           <div class="general-first-screen__container">
             <img
               src="@img/concerts/main-screen.jpg"
@@ -14,146 +14,123 @@
             />
           </div>
         </div>
-        <section class="page__gallery-section-2 section-7">
-          <div class="section-7__container">
-            <h1 class="section-7__title">Фото</h1>
-            <div class="section-7__gallery gallery-section-7">
-              <div class="gallery-section-7__grid">
-                <div
-                  class="gallery-section-7__item gallery-section-7__item_span_2"
+        <section class="page__gallery gallery">
+          <div class="gallery__container">
+            <h1 class="gallery__title">Фото</h1>
+            <ul class="gallery__list gallery-list">
+              <li class="gallery-list__item gallery-list__item_span_2">
+                <a href="./gallery-inner.html" class="gallery-list__link"></a>
+                <img
+                  class="gallery-list__image"
+                  data-src="@img/general/gallery/gallery-image_1_lg.jpg"
+                  alt="image"
+                />
+                <span class="gallery-list__image-date"
+                  >Тур Hello, Харків - 07.06.2019</span
                 >
-                  <a href="./gallery-inner.html" class="gallery-section-7__link"></a>
-                  <img
-                    class="gallery-section-7__image"
-                    data-src="@img/general/gallery/gallery-image_1_lg.jpg"
-                    alt="image"
-                  />
-                  <span class="gallery-section-7__image-date"
-                    >Тур Hello, Харків - 07.06.2019</span
-                  >
-                  <div
-                    class="gallery-section-7__image-counter image-counter-gallery-section-7"
-                  >
-                    <span class="image-counter-gallery-section-7__number"
-                      >50</span
-                    >
-                    <span class="image-counter-gallery-section-7__text"
-                      >фото</span
-                    >
-                  </div>
+                <div class="gallery-list__image-counter image-counter-gallery">
+                  <span class="image-counter-gallery__number">50</span>
+                  <span class="image-counter-gallery__text">фото</span>
                 </div>
-                <div class="gallery-section-7__item">
-                  <a href="./index.html" class="gallery-section-7__link"></a>
-                  <img
-                    class="gallery-section-7__image"
-                    data-src="@img/general/gallery/gallery-image_1_sm.jpg"
-                    alt="image"
-                  />
-                  <span class="gallery-section-7__image-date"
-                    >Тур Hello, Львів - 25.05.2019</span
-                  >
-                  <div
-                    class="gallery-section-7__image-counter image-counter-gallery-section-7"
-                  >
-                    <span class="image-counter-gallery-section-7__number"
-                      >50</span
-                    >
-                    <span class="image-counter-gallery-section-7__text"
-                      >фото</span
-                    >
-                  </div>
-                </div>
-                <div class="gallery-section-7__item">
-                  <a href="./index.html" class="gallery-section-7__link"></a>
-                  <img
-                    class="gallery-section-7__image"
-                    data-src="@img/general/gallery/gallery-image_3_sm.jpg"
-                    alt="image"
-                  />
-                  <span class="gallery-section-7__image-date"
-                    >Тур HELLO, Київ - 16.11.2019</span
-                  >
-                  <div
-                    class="gallery-section-7__image-counter image-counter-gallery-section-7"
-                  >
-                    <span class="image-counter-gallery-section-7__number"
-                      >50</span
-                    >
-                    <span class="image-counter-gallery-section-7__text"
-                      >фото</span
-                    >
-                  </div>
-                </div>
-                <div class="gallery-section-7__item">
-                  <a href="./index.html" class="gallery-section-7__link"></a>
+              </li>
+              <li class="gallery-list__item">
+                <a href="./gallery-inner.html" class="gallery-list__link"></a>
 
-                  <img
-                    class="gallery-section-7__image"
-                    data-src="@img/general/gallery/gallery-image_2_sm.jpg"
-                    alt="image"
-                  />
-                  <span class="gallery-section-7__image-date"
-                    >Тур Hello, Харків - 07.06.2019</span
-                  >
+                <img
+                  class="gallery-list__image"
+                  data-src="@img/general/gallery/gallery-image_1_sm.jpg"
+                  alt="image"
+                />
+                <span class="gallery-list__image-date"
+                  >Тур Hello, Львів - 25.05.2019</span
+                >
+                <div class="gallery-list__image-counter image-counter-gallery">
+                  <span class="image-counter-gallery__number">50</span>
+                  <span class="image-counter-gallery__text">фото</span>
                 </div>
-                <div class="gallery-section-7__item">
-                  <a href="./index.html" class="gallery-section-7__link"></a>
-                  <img
-                    class="gallery-section-7__image"
-                    data-src="@img/general/gallery/gallery-image_1_sm.jpg"
-                    alt="image"
-                  />
-                  <span class="gallery-section-7__image-date"
-                    >Тур Hello, Львів - 25.05.2019</span
-                  >
+              </li>
+              <li class="gallery-list__item">
+                <a href="./gallery-inner.html" class="gallery-list__link"></a>
+                <img
+                  class="gallery-list__image"
+                  data-src="@img/general/gallery/gallery-image_3_sm.jpg"
+                  alt="image"
+                />
+                <span class="gallery-list__image-date"
+                  >Тур HELLO, Київ - 16.11.2019</span
+                >
+                <div class="gallery-list__image-counter image-counter-gallery">
+                  <span class="image-counter-gallery__number">50</span>
+                  <span class="image-counter-gallery__text">фото</span>
                 </div>
-                <div class="gallery-section-7__item">
-                  <a href="./index.html" class="gallery-section-7__link"></a>
-
-                  <img
-                    class="gallery-section-7__image"
-                    data-src="@img/general/gallery/gallery-image_2_sm.jpg"
-                    alt="image"
-                  />
-                  <span class="gallery-section-7__image-date"
-                    >Тур HELLO, Київ - 16.11.2019</span
-                  >
-                </div>
-                <div class="gallery-section-7__item">
-                  <a href="./index.html" class="gallery-section-7__link"></a>
-                  <img
-                    class="gallery-section-7__image"
-                    data-src="@img/general/gallery/gallery-image_3_sm.jpg"
-                    alt="image"
-                  />
-                  <span class="gallery-section-7__image-date"
-                    >Тур Hello, Харків - 07.06.2019</span
-                  >
-                </div>
-                <div class="gallery-section-7__item">
-                  <a href="./index.html" class="gallery-section-7__link"></a>
-                  <img
-                    class="gallery-section-7__image"
-                    data-src="@img/general/gallery/gallery-image_2_sm.jpg"
-                    alt="image"
-                  />
-                  <span class="gallery-section-7__image-date"
-                    >Тур Hello, Львів - 25.05.2019</span
-                  >
-                </div>
-                <div class="gallery-section-7__item">
-                  <a href="./index.html" class="gallery-section-7__link"></a>
-                  <img
-                    class="gallery-section-7__image"
-                    data-src="@img/general/gallery/gallery-image_3_sm.jpg"
-                    alt="image"
-                  />
-                  <span class="gallery-section-7__image-date"
-                    >Тур HELLO, Київ - 16.11.2019</span
-                  >
-                </div>
-              </div>
-            </div>
+              </li>
+              <li class="gallery-list__item">
+                <a href="./gallery-inner.html" class="gallery-list__link"></a>
+                <img
+                  class="gallery-list__image"
+                  data-src="@img/general/gallery/gallery-image_2_sm.jpg"
+                  alt="image"
+                />
+                <span class="gallery-list__image-date"
+                  >Тур Hello, Харків - 07.06.2019</span
+                >
+              </li>
+              <li class="gallery-list__item">
+                <a href="./gallery-inner.html" class="gallery-list__link"></a>
+                <img
+                  class="gallery-list__image"
+                  data-src="@img/general/gallery/gallery-image_1_sm.jpg"
+                  alt="image"
+                />
+                <span class="gallery-list__image-date"
+                  >Тур Hello, Львів - 25.05.2019</span
+                >
+              </li>
+              <li class="gallery-list__item">
+                <a href="./gallery-inner.html" class="gallery-list__link"></a>
+                <img
+                  class="gallery-list__image"
+                  data-src="@img/general/gallery/gallery-image_2_sm.jpg"
+                  alt="image"
+                />
+                <span class="gallery-list__image-date"
+                  >Тур HELLO, Київ - 16.11.2019</span
+                >
+              </li>
+              <li class="gallery-list__item">
+                <a href="./gallery-inner.html" class="gallery-list__link"></a>
+                <img
+                  class="gallery-list__image"
+                  data-src="@img/general/gallery/gallery-image_3_sm.jpg"
+                  alt="image"
+                />
+                <span class="gallery-list__image-date"
+                  >Тур Hello, Харків - 07.06.2019</span
+                >
+              </li>
+              <li class="gallery-list__item">
+                <a href="./gallery-inner.html" class="gallery-list__link"></a>
+                <img
+                  class="gallery-list__image"
+                  data-src="@img/general/gallery/gallery-image_2_sm.jpg"
+                  alt="image"
+                />
+                <span class="gallery-list__image-date"
+                  >Тур Hello, Львів - 25.05.2019</span
+                >
+              </li>
+              <li class="gallery-list__item">
+                <a href="./gallery-inner.html" class="gallery-list__link"></a>
+                <img
+                  class="gallery-list__image"
+                  data-src="@img/general/gallery/gallery-image_3_sm.jpg"
+                  alt="image"
+                />
+                <span class="gallery-list__image-date"
+                  >Тур HELLO, Київ - 16.11.2019</span
+                >
+              </li>
+            </ul>
           </div>
         </section>
       </main>
