@@ -14,8 +14,6 @@
     }
 
     &__link {
-        display: inline-block;
-        text-align: center;
     }
 
     &__body {
@@ -81,5 +79,135 @@
     }
 
     &__album-image {
+    }
+}
+
+.page {
+    &__music-inner-section-2 {
+    }
+}
+.music-inner-section-2 {
+    &__container {
+    }
+
+    &__title {
+    }
+
+    &__content {
+        &:not(:last-child) {
+            margin-bottom: rem(52);
+        }
+    }
+    &__music-links {
+        width: rem(80);
+        margin: 0 auto;
+    }
+}
+
+.content-music-inner {
+    &__control {
+        max-width: rem(776);
+        width: 100%;
+        margin: 0 auto;
+        &:not(:last-child) {
+            margin-bottom: rem(24);
+        }
+    }
+
+    &__general {
+    }
+}
+.control-content-music {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    text-align: center;
+    font-family: "OpenSans";
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: math.div(23, 16);
+    color: #2d2d2d;
+    &__group {
+    }
+    &__song {
+        font-weight: 600;
+        &:not(:last-child) {
+            margin-bottom: em(32, 16);
+        }
+    }
+    &__buttons {
+        font-size: rem(24);
+    }
+
+    &__btn-prev {
+    }
+
+    &__btn-stop {
+    }
+
+    &__btn-next {
+    }
+}
+.general-content-music {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__list {
+        flex: 0 1 percent(576, 1176);
+    }
+
+    &__image-ibg {
+        flex: 0 1 rem(476);
+        padding-bottom: percent(476, 1176);
+    }
+}
+
+.list-music {
+    &__item {
+        font-family: "OpenSans";
+        font-weight: 400;
+        font-size: rem(16);
+        line-height: math.div(23, 16);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: rem(12);
+        border: 1px solid #e0e0e0;
+        border-radius: rem(15);
+        &:not(:last-child) {
+            margin-bottom: rem(15);
+        }
+    }
+    &__item-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 1 rem(354);
+    }
+    &__name {
+        color: #2d2d2d;
+    }
+    &__time {
+        color: #989898;
+    }
+    &__action {
+        font-size: rem(24);
+    }
+    &__links {
+        flex: 0 0 rem(54);
+    }
+}
+
+.music-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+        font-size: rem(32);
+        &_font-size_less {
+            font-size: rem(24);
+        }
+    }
+    &__link {
     }
 }

@@ -5,6 +5,7 @@
 .spollers {
     display: grid;
     gap: 15px;
+    // min-height: 100%;
     &_contacts {
         @media (max-width: $tablet) {
             flex: 0 1 rem(300);
@@ -17,6 +18,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    // height: 100%;
+    justify-content: space-between;
 }
 // Заголовок спойлера
 .spollers__title {
@@ -27,7 +30,6 @@
     padding: rem(10) rem(15);
     border-radius: rem(5);
     position: relative;
-
     &_contacts {
         text-align: center;
         font-family: "albertusnovalight";
@@ -35,6 +37,7 @@
         font-size: rem(18);
         line-height: math.div(25, 18);
         color: $mainColorBlack;
+        // flex: 0 1 100%;
         &:not(:last-child) {
             margin-bottom: em(8, 18);
         }
