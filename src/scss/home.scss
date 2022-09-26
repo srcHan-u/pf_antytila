@@ -379,7 +379,7 @@
 // ====
 
 .page {
-    &__section-8 {
+    &__articles {
         padding: rem(48) 0;
     }
 }
@@ -404,11 +404,23 @@
     }
 
     &__grid {
+        &:not(:last-child) {
+            margin-bottom: rem(28);
+        }
+    }
+    &__button {
+        margin: 0 auto;
     }
 }
 .grid-section-9 {
     display: grid;
     grid-template-columns: repeat(auto-fill, rem(234));
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: center;
+    @media (max-width: $mobileSmall) {
+        grid-template-columns: 1fr;
+    }
     &__item {
     }
 
@@ -423,6 +435,7 @@
 .page {
     &__section-10 {
         padding: rem(48) 0;
+        background-color: #dfdcdd;
     }
 }
 .section-10 {
@@ -431,6 +444,9 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        @media (max-width: $tablet) {
+            justify-content: center;
+        }
     }
 
     &__left-side {
@@ -439,7 +455,7 @@
 
     &__image {
         width: 100%;
-        min-width: rem(344);
+        min-width: rem(290);
     }
 
     &__right-side {
@@ -451,13 +467,16 @@
         // flex-direction: column;
         // align-items: flex-start;
         color: $mainColorBlack;
+        @media (max-width: $tablet) {
+            text-align: center;
+        }
     }
 
     &__title {
         font-family: "albertusnova";
         font-weight: 400;
-        font-size: rem(30);
         line-height: math.div(42, 30);
+        @include adaptiveValue("font-size", 30, 24);
     }
 
     &__text {
@@ -474,6 +493,9 @@
         display: flex;
         align-items: center;
         column-gap: rem(16);
+        @media (max-width: $tablet) {
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -524,8 +546,11 @@
 
     &__body {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
+        flex-wrap: wrap;
+        gap: rem(20);
+        min-height: 100%;
     }
 
     &__list {
@@ -535,7 +560,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     &__post {
         font-family: "albertusnovalight";
         font-weight: 300;

@@ -183,6 +183,12 @@ body {
     &__videos {
         padding-bottom: rem(48);
     }
+    &__gallery {
+        padding: rem(48) 0;
+        &_padding_bottom_100 {
+            @include adaptiveValue("padding-bottom", 100, 48);
+        }
+    }
     &__concerts-section-2 {
         @include adaptiveValue("padding-bottom", 100, 50);
     }

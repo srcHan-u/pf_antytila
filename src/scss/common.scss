@@ -43,8 +43,11 @@
 
 // news
 
-.section-8 {
+.articles {
     &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     &__title {
@@ -66,36 +69,48 @@
     &__list {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         gap: rem(24);
         flex-wrap: wrap;
         &:not(:last-child) {
             margin-bottom: rem(28);
         }
+        @media (max-width: em(600)) {
+            justify-content: center;
+        }
     }
 
     &__item {
         flex: 0 1 rem(276);
+        min-height: 100%;
     }
 
     &__card {
+        // min-height: rem(355);
+        height: 100%;
     }
     &__pagination {
         width: rem(314);
         margin: 0 auto;
     }
 }
-.card-section-8 {
+.card-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__image-ibg {
         padding-bottom: percent(186, 276);
         border-radius: 10px;
         overflow: hidden;
+        width: 100%;
         &:not(:last-child) {
             margin-bottom: rem(16);
         }
     }
 
     &__body {
+        width: 100%;
+        flex: 0 1 100%;
     }
 
     &__heading {
@@ -116,6 +131,8 @@
         line-height: math.div(21, 14);
         color: #2d2d2d;
         margin-bottom: rem(8);
+        max-height: rem(320);
+        overflow-y: auto;
     }
 
     &__footer {
@@ -123,6 +140,7 @@
         justify-content: space-between;
         align-items: center;
         gap: rem(8);
+        width: 100%;
     }
 
     &__date {
@@ -153,7 +171,7 @@
     }
 }
 
-.pagination-section-8 {
+.pagination-articles {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -196,15 +214,6 @@
 
 // gallery
 
-.page {
-    &__gallery {
-        padding-bottom: rem(48);
-        &_gallery_padding_bottom_100 {
-            @include adaptiveValue("padding-bottom", 100, 48);
-            padding-top: rem(48);
-        }
-    }
-}
 .gallery {
     &__container {
         display: flex;
