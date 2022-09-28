@@ -5,15 +5,15 @@
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
-          <div class="page__main-screen-home main-screen-home">
-            <div class="main-screen-home__container">
+          <div class="page__main-screen main-screen">
+            <div class="main-screen__container">
               <img
-                class="main-screen-home__main-screen-image"
+                class="main-screen__image"
                 data-src="@img/home/main-screen.png"
                 alt="image"
               />
-              <button type="button" class="main-screen-home__button-drop-down" >
-                <span class="_icon-down-circle" data-goto="#concerts"></span>
+              <button type="button" class="main-screen__button-drop-down" data-goto="#concerts">
+                <span class="_icon-down-circle"></span>
               </button>
             </div>
           </div>
@@ -111,18 +111,18 @@
             </a>
           </div>
         </section>
-        <div class="page__alert-block alert-block">
-          <div class="alert-block__container">
-            <div class="alert-block__box">
+        <div class="page__promo-block promo-block">
+          <div class="promo-block__container">
+            <div class="promo-block__box">
               <img
-                class="alert-block__image"
+                class="promo-block__image"
                 data-src="@img/home/alert-block.png"
                 alt="image"
               />
             </div>
-            <p class="alert-block__text">
+            <p class="promo-block__text">
               ПРЕМ’ЄРА!
-              <span class="alert-block__text_size_small"
+              <span class="text-size-small"
                 >Дивись на YouTube!</span
               >
             </p>

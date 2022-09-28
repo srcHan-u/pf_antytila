@@ -160,7 +160,7 @@ body {
 @import "footer";
 
 .page {
-    &__main-screen-home {
+    &__main-screen {
         padding: rem(100) 0 rem(40) 0;
     }
     &__concerts {
@@ -169,7 +169,7 @@ body {
             @include adaptiveValue("padding-bottom", 100, 48);
         }
     }
-    &__alert-block {
+    &__promo-block {
         background: url("@img/home/alert-block_bg.jpg") no-repeat;
         background-size: cover;
         padding: rem(48) 0;

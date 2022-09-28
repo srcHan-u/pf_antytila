@@ -1,11 +1,11 @@
 //====================================================================================================
 
-.main-screen-home {
+.main-screen {
     background: url("../img/home/main-screen_bg.jpg") no-repeat top center;
     background-size: cover;
     &__container {
     }
-    &__main-screen-image {
+    &__image {
         display: block;
         margin: 0 auto rem(60) auto;
         transform: translateY(rem(-40));
@@ -148,7 +148,7 @@
 
 //====================================================================================================
 
-.alert-block {
+.promo-block {
     &__container {
         display: flex;
         justify-content: space-between;
@@ -174,8 +174,7 @@
         color: #ffffff;
         display: flex;
         flex-direction: column;
-
-        &_size_small {
+        > .text-size-small {
             display: block;
             @include adaptiveValue("font-size", 32, 20);
             line-height: math.div(44, 32);
@@ -220,8 +219,6 @@
 }
 
 // ==============
-
-
 
 // ====
 
