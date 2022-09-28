@@ -1,7 +1,7 @@
 // Заголовки, общие БЄМ блоки и проче...
 .background-block {
     background-color: rgba($color: #000000, $alpha: 0.5);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

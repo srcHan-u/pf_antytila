@@ -20,7 +20,7 @@ export function pageNavigation() {
 		if (e.type === "click") {
 			const targetElement = e.target;
 			if (targetElement.closest('[data-goto]')) {
-				const gotoLink = targetElement.closest('[data-goto]');
+                const gotoLink = targetElement.closest('[data-goto]');
 				const gotoLinkSelector = gotoLink.dataset.goto ? gotoLink.dataset.goto : '';
 				const noHeader = gotoLink.hasAttribute('data-goto-header') ? true : false;
 				const gotoSpeed = gotoLink.dataset.gotoSpeed ? gotoLink.dataset.gotoSpeed : 500;
