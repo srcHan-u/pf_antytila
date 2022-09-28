@@ -46,46 +46,19 @@
         font-size: rem(16);
         line-height: math.div(23, 16);
         color: $mainColorBlack;
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
     }
     &__text {
         flex: 0 1 50%;
-    }
-}
-
-.albums-music-inner {
-    &__heading {
-        font-family: "albertusnova";
-        font-weight: 400;
-        font-size: rem(20);
-        line-height: math.div(28, 20);
-        color: $mainColorBlack;
-        &:not(:last-child) {
-            margin-bottom: em(24, 20);
+        @media (max-width: $mobile) {
+            flex: none;
+            width: 100%;
         }
     }
-    &__list {
-    }
-}
-.list-music-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: rem(24);
-    flex-wrap: wrap;
-    &__item {
-    }
-
-    &__album {
-    }
-
-    &__album-image {
-    }
 }
 
-.page {
-    &__music-inner-section-2 {
-    }
-}
 .music-inner-section-2 {
     &__container {
     }
@@ -152,17 +125,37 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    &__list {
-        flex: 0 1 percent(576, 1176);
+    column-gap: rem(15);
+    @media (max-width: $mobile) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(30);
     }
-
+    &__list {
+        flex: 0 0 percent(576, 1176);
+        @media (max-width: $mobile) {
+            // flex: 0 0 100%;
+            flex: none;
+            width: 100%;
+        }
+    }
+    &__action-box {
+    }
     &__image-ibg {
         flex: 0 1 rem(476);
         padding-bottom: percent(476, 1176);
+        overflow: hidden;
+        border-radius: 15px;
+        @media (max-width: $mobile) {
+            flex: 0 0 percent(476, 1176);
+            max-width: rem(476);
+            width: 100%;
+        }
     }
 }
 
 .list-music {
+    min-width: 290px;
     &__item {
         font-family: "OpenSans";
         font-weight: 400;
@@ -186,15 +179,25 @@
     }
     &__name {
         color: #2d2d2d;
+        flex: 0 0 rem(170);
+        text-align: left;
+        @media (max-width: $mobileSmall) {
+            flex: none;
+        }
     }
     &__time {
         color: #989898;
+        // flex: 1 0 auto;
     }
     &__action {
         font-size: rem(24);
     }
     &__links {
         flex: 0 0 rem(54);
+    }
+    &__action-box {
+        display: flex;
+        column-gap: rem(8);
     }
 }
 

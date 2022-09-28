@@ -76,19 +76,21 @@
               ціну перемог», - розповідає Тарас Тополя.
             </p>
             <div class="grid-video-section-6__item row-col-2-section-6__item">
-              <video
-                class="grid-video-section-6__video row-col-2-section-6__video"
-                muted
-                poster="@img/home/video-poster_1.jpg"
-              >
-                <source src="./files/IMG_6171.MP4" type="video/mp4" />
-              </video>
-              <button
-                type="button"
-                class="grid-video-section-6__control-button"
-              >
-                <span class="_icon-play"></span>
-              </button>
+                <div class="video">
+                    <img class="video__poster" data-src="@img/home/video-poster_1.jpg" alt="image">
+                    <video class="video__source" muted preload="metadata">
+                        <source src="./files/IMG_6171.MP4" type="video/mp4">
+                    </video>
+                    <button class="video__button _icon-play" type="button"></button>
+                    <div class="video__controls controls-video hidden">
+                        <div class="controls-video__buttons">
+                            <button class="controls-video__button controls-video__button_pause _icon-pause" type="button"></button>
+                            <button class="controls-video__button controls-video__button_play _icon-play_arrow" type="button"></button>
+                            <button class="controls-video__button controls-video__button_volume" type="button">Volume</button>
+                        </div>
+                        <div class="controls-video__time"></div>
+                    </div>
+                </div>
             </div>
             <p class="news-inner-post__text">
               «Коли мені зателефонував Сергій Вусик, директор гурту Антитіла, і
@@ -150,7 +152,7 @@
             </p>
           </div>
         </article>
-        <section class="page__news-section-2 articles">
+        <section class="page__news-section-2 articles articles_bg-color-gray">
           <div class="articles__container">
             <h2 class="articles__title articles__title_h2">Читайте також:</h2>
             <ul class="articles__list">
@@ -243,6 +245,21 @@
             </ul>
           </div>
         </section>
+        <!-- <div class="video">
+            <img class="video__poster" data-src="@img/home/video-poster_1.jpg" alt="image">
+            <video class="video__source" muted preload="metadata">
+                <source src="./files/IMG_6171.MP4" type="video/mp4">
+            </video>
+            <button class="video__button _icon-play" type="button"></button>
+            <div class="video__controls controls-video hidden">
+                <div class="controls-video__buttons">
+                    <button class="controls-video__button controls-video__button_pause _icon-pause" type="button"></button>
+                    <button class="controls-video__button controls-video__button_play _icon-play_arrow" type="button"></button>
+                    <button class="controls-video__button controls-video__button_volume" type="button">Volume</button>
+                </div>
+                <div class="controls-video__time"></div>
+            </div>
+        </div> -->
       </main>
       @@include('html/_footer.htm',{})
     </div>

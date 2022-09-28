@@ -30,20 +30,23 @@ const ELEMENTS = {
 if (ELEMENTS.videos.buttons !== null && ELEMENTS.videos.elements !== null) {
   let buttons = Array.from(ELEMENTS.videos.buttons);
   let videos = Array.from(ELEMENTS.videos.elements);
-    for (const btn of buttons) {
-        btn.addEventListener("click", (e) => {
-            let getVideo = e.target.previousElementSibling;
-            for (const video of videos) {
-                if(!video.firstElementChild.paused && video.firstElementChild !== getVideo){
-                    video.firstElementChild.pause()
-                }
-            }
-            e.target.classList.add('disable');
-            getVideo.play();
-            getVideo.controls = true;
-            getVideo.volume = 0.1;
-        })
-    }
+  for (const btn of buttons) {
+    btn.addEventListener("click", (e) => {
+      let getVideo = e.target.previousElementSibling;
+      for (const video of videos) {
+        if (
+          !video.firstElementChild.paused &&
+          video.firstElementChild !== getVideo
+        ) {
+          video.firstElementChild.pause();
+        }
+      }
+      e.target.classList.add("disable");
+      getVideo.play();
+      getVideo.controls = true;
+      getVideo.volume = 0.1;
+    });
+  }
 }
 
 // todo fd make structure and organize
@@ -128,6 +131,98 @@ class Product {
   }
 }
 
-const sss = new Product("imag", "some", "M", 333);
-
-console.log(sss);
+let videos = Array.from(document.querySelectorAll(".video"));
+let videoSources = Array.from(document.querySelectorAll(".video__source"));
+videos.forEach((item) => {
+  let itemChildes;
+  if (item.childElementCount > 0) {
+    itemChildes = item.children;
+    item.addEventListener("click", (e) => {
+      if (e.target.matches(".video__button")) {
+        for (const iterator of itemChildes) {
+          if (iterator.matches(".video__source")) {
+            console.log(iterator.volume);
+            iterator.play();
+          } else if (iterator.matches(".video__controls")) {
+            iterator.classList.remove("hidden");
+          } else if (iterator.matches(".video__poster")) {
+            iterator.classList.add("hidden");
+          }
+          e.target.classList.add("hidden");
+        }
+      } else if (e.target.matches(".controls-video__button_pause")) {
+        for (const iterator of itemChildes) {
+          if (iterator.matches(".video__source")) {
+            iterator.pause();
+            e.target.setAttribute("disabled", "true");
+          } else if (iterator.matches(".video__controls")) {
+            for (const a of iterator.children) {
+              if (a.matches(".controls-video__buttons")) {
+                for (const b of a.children) {
+                  if (
+                    b.matches(".controls-video__button_play") &&
+                    b.hasAttribute("disabled")
+                  ) {
+                    b.removeAttribute("disabled");
+                  }
+                }
+              }
+            }
+          }
+        }
+      } else if (e.target.matches(".controls-video__button_play")) {
+        for (const iterator of itemChildes) {
+          if (iterator.matches(".video__source")) {
+            iterator.play();
+            e.target.setAttribute("disabled", "true");
+          } else if (iterator.matches(".video__controls")) {
+            for (const a of iterator.children) {
+              if (a.matches(".controls-video__buttons")) {
+                for (const b of a.children) {
+                  if (b.matches(".controls-video__button_pause")) {
+                    b.removeAttribute("disabled");
+                  }
+                }
+              }
+            }
+          }
+        }
+      } else if (e.target.matches(".controls-video__button_volume")) {
+        for (const iterator of itemChildes) {
+          if (iterator.matches(".video__source")) {
+            console.log(2);
+            iterator.volume = 0.5;
+          }
+        }
+      } else {
+        for (const iterator of itemChildes) {
+          if (iterator.matches(".video__source")) {
+            iterator.pause();
+            
+          } else if (iterator.matches(".video__controls")) {
+            iterator.classList.add("hidden");
+            for (const a of iterator.children) {
+              if (a.matches(".controls-video__buttons")) {
+                for (const b of a.children) {
+                  if (b.matches(".controls-video__button_pause")) {
+                    b.removeAttribute("disabled");
+                  } else if (b.matches(".controls-video__button_play")) {
+                    b.removeAttribute("disabled");
+                  }
+                }
+              }
+            }
+          } else if (iterator.matches(".video__button")) {
+            iterator.classList.remove("hidden");
+          } else if (iterator.matches(".video__poster")) {
+            iterator.classList.remove("hidden");
+          }
+        }
+      }
+    });
+    console.log(itemChildes);
+  } else {
+    itemChildes = null;
+    console.log(`${item} doesn't have any child`);
+  }
+});
